@@ -1,0 +1,12 @@
+body::-webkit-scrollbar {
+    width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px #94edff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #94edff 20%, #000000 21%, rgb(0, 0, 0) 39%, #94edff 40%, #94edff 60%, #000000 61%,#000000 79%,#94edff 80%,);
+    outline: none;
+}

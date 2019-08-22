@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #ffffff;
@@ -392,3 +393,7 @@ canvas {
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
+
+
+@import "global-style.scss";
+@import "scrollbar/scrollbar.scss";
