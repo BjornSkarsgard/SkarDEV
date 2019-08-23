@@ -1,140 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SkarsgarDev</title>
-    <link href="/css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- count particles -->
-    <div class="count-particles">
-        <span class="js-count-particles">--</span> particles
-      </div>
-      <!-- particles.js container -->
-      <div class="flex">
-          <div id="particles-js"></div>
-          <div id="particles-js1"></div>
-      </div>
-      <!-------------------------------------->
-    <header class="header">
-      <div class="header__block">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SkarsgarDev</title>
+  <link href="/css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- count particles -->
+  <!-- <div class="count-particles">
+      <span class="js-count-particles">--</span> particles
+    </div> -->
+  <!-- particles.js container -->
+  <div class="particles" id="particles-js"></div>
+  <!-------------------------------------->
+  <header class="header">
+    <div class="header__block">
+      <a class="header__logo-link" href="/index.html">
         <div class="header__logo">
-          <img src="/img/logo.png" title="logo">
-        </div>
-        <div class="header__title-logo">
-          <p class="header__title-logo--skar">Skarsgar</p>
-          <p class="header__title-logo--d">d</p>
-          <p class="header__title-logo--ev">ev</p>
-        </div>
-        <div class="header__menu">
-          <ul class="header__menu-items">
-            <li class="header__menu-item">
-              <a class="header__menu-link header__menu-link--active" href="#">Лучшее</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Новости</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Биография</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Блог</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header_search search">
-          <form class="search_form" action="get">
-            <input checked="" type="search" name="search" id="1" placeholder="Что-то потерял? Все найдется!">
-            <input type="submit">
-          </form>
-        </div>
+      </div></a>
+      <div class="header__title-logo">
+        <p class="header__title-logo header__title-logo--skar">Skarsgar</p>
+        <p class="header__title-logo header__title-logo--d">d</p>
+        <p class="header__title-logo header__title-logo--ev">ev</p>
       </div>
-    </header>
-    <main class="main">
+      <div class="header__menu">
+        <ul class="header__menu-items">
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--best header__menu-link--active" href="#">Лучшее</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--news" href="#">Новости</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--biog" href="#">Биография</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--blog" href="#">Блог</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__search search">
+        <form class="search__form" action="#" method="GET">
+          <input class="search__box" type="search" name="search" id="1" placeholder="Что то потерял? Все найдется!">
+          <input value="" class="search__button" type="submit">
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__block">
       <section class="materials">
-        <h1 class="materials__title">Новое на сайте</h1>
-        <article class="materials__block block">
-          <div class="block__poster">
-            <img src="#" alt="photo">
-          </div>
-          <div class="block__details details">
-            <h1 class="details__title">Шрифт - KATANA'S EDGE</h1>
-            <p class="details__date">18.08.2019</p>
-            <p class="details__kategory">Шрифты</p>
-            <p class="details__desc">
-              Представитель шрифтов из разряда таких, как Edo SZ или True
-              Lies.<br>
-              Полезно иметь парочку таковых на разные случаи, рекомендую
-            </p>
-          </div>
-          <div class="block__links">
-            <a class="block__link block__link--detail" href="#">Подробнее</a>
-            <a class="block__link block__link--download" href="#">Скачать</a>
-          </div>
-        </article>
-      </section>
-      <section class="paginator">
-        <h2 class="paginator__title">Страницы</h2>
-        <div class="paginator__block">
-          <nav class="paginator__navigation">
-            <ul class="paginator__items">
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> < </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 1 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 2 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 3 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 4 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 5 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 6 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 7 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 8 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 9 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 10 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 11 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 12 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 13 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 14 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> 15 </a>
-              </li>
-              <li class="paginator__item">
-                <a class="paginator__link" href="#"> > </a>
-              </li>
-            </ul>
-          </nav>
+        <div class="materials__box">
+          <h1 class="materials__title">Новое на сайте</h1>
+          <article class="materials__block block">
+            <div class="block__poster">
+              <img class="block__img" src="/img/photo.png" alt="photo">
+            </div>
+            <div class="block__text">
+              <div class="block__details ">
+                <a class="block__title-link" href="#">
+                  <h1 class="block__title">Шрифт - KATANA'S EDGE</h1>
+                </a>
+                <p class="block__date">18.08.2019</p>
+                <p class="block__kategory"><a class="block__kategory-link block__kategory-fonts" href="#">Шрифты</a></p>
+                <p class="block__desc">
+                  Представитель шрифтов из разряда таких, как Edo SZ или True
+                  Lies.<br>
+                  Полезно иметь парочку таковых на разные случаи, рекомендую
+                </p>
+              </div>
+              <div class="block__links">
+                <a class="block__link block__link--detail" href="#">Подробнее</a>
+                <a class="block__link block__link--download" href="#">Скачать</a>
+              </div>
+            </div>
+          </article>
+          <article class="materials__block block">
+            <div class="block__poster">
+              <img class="block__img" src="/img/photo1.png" alt="photo">
+            </div>
+            <div class="block__text">
+              <div class="block__details ">
+                <a class="block__title-link" href="#">
+                  <h1 class="block__title">GOOGLE PICASA - Лучшая в мире программа для просмотра
+                    картинок!</h1>
+                </a>
+                <p class="block__date">13.07.2019</p>
+                <p class="block__kategory"><a class="block__kategory-link block__kategory-program" href="#">Программы</a>
+                </p>
+                <p class="block__desc">
+                  Вам надоел стандартный просмотрщик картинок? Он слишком уродливый,
+                  <br>
+                  медленный или Вы просто хотите чего-то получше?
+                  <br>
+                  Тогда Google Picasa это Ваше спасение!!!
+                </p>
+              </div>
+              <div class="block__links">
+                <a class="block__link block__link--detail" href="#">Подробнее</a>
+                <a class="block__link block__link--download" href="#">Скачать</a>
+              </div>
+            </div>
+          </article>
+          <article class="materials__block block">
+            <div class="block__poster">
+              <img class="block__img" src="/img/photo2.png" alt="photo">
+            </div>
+            <div class="block__text">
+              <div class="block__details ">
+                <a class="block__title-link" href="#">
+                  <h1 class="block__title">Набор крутых иконок</h1>
+                </a>
+                <p class="block__date">20.08.2019</p>
+                <p class="block__kategory"><a class="block__kategory-link block__kategory-design" href="#">Дизайн</a>
+                </p>
+                <p class="block__desc">
+                  Набор кастомных и не только иконок, хорошо подойдет для оформления Windows.
+                  <br>
+                  Все выполнены в едином красивом стиле.
+                </p>
+              </div>
+              <div class="block__links">
+                <a class="block__link block__link--detail" href="#">Подробнее</a>
+                <a class="block__link block__link--download" href="#">Скачать</a>
+              </div>
+            </div>
+          </article>
         </div>
+        <section class="paginator">
+          <h2 class="paginator__title">Страницы</h2>
+          <div class="paginator__block">
+            <nav class="paginator__navigation">
+              <ul class="paginator__items">
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#">
+                    < </a> </li> <li class="paginator__item">
+                      <a class="paginator__link" href="#"> 1 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 2 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 3 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 4 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 5 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 6 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 7 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 8 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 9 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 10 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 11 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 12 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 13 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 14 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> 15 </a>
+                </li>
+                <li class="paginator__item">
+                  <a class="paginator__link" href="#"> > </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
       </section>
       <aside class="sidebar">
         <section class="sidebar__statistic statistic">
@@ -277,42 +334,43 @@
           </ul>
         </section>
       </aside>
-    </main>
-    <footer class="footer">
-      <section class="about">
-        <div class="about__logo about__logo--up"></div>
-        <h3 class="about__desc">
-          Проект "
-          <p class="about__skar">SkarsgarDev</p>
-          " создан с целью<br>
-          коллекционирования наиболее интересных<br>
-          материалов, с целью быстрого доступа к ним<br>
-          в форс-мажорных ситуацих.
-        </h3>
-        <h3 class="about__desc">
-          А так-же в качестве портфолио с содержанием<br>
-          примеров выполненных работ
-        </h3>
-        <h3 class="about__desc">
-          Мы не приследуем цель незаконного распространения<br>
-          материалов, поэтому если Вы являетесь<br>
-          правообладателем, сообщите нам о наруешнии по<br>
-          указанным здесь контактам
-        </h3>
-        <div class="about__logo about__logo--down"></div>
-      </section>
-      <div class="footer__info">
-        <p class="footer__text">
-          © 2019. Автор проекта, дизайнер и программист :
-        </p>
-        <p class="footer__name">Bjorn Skarsgard</p>
-        <p class="footer__email">bjornskarsgarddev@gmail.com</p>
-      </div>
-    </footer>
-    <script src="js/particles/particles.js"></script>
-    <script src="js/particles/app.js"></script>
-    <script src="js/particles/lib/stats.js"></script>
-    <!-- <script>
+    </div>
+  </main>
+  <footer class="footer">
+    <section class="about">
+      <div class="about__logo about__logo--up"></div>
+      <h3 class="about__desc">
+        Проект "
+        <p class="about__skar">SkarsgarDev</p>
+        " создан с целью<br>
+        коллекционирования наиболее интересных<br>
+        материалов, с целью быстрого доступа к ним<br>
+        в форс-мажорных ситуацих.
+      </h3>
+      <h3 class="about__desc">
+        А так-же в качестве портфолио с содержанием<br>
+        примеров выполненных работ
+      </h3>
+      <h3 class="about__desc">
+        Мы не приследуем цель незаконного распространения<br>
+        материалов, поэтому если Вы являетесь<br>
+        правообладателем, сообщите нам о наруешнии по<br>
+        указанным здесь контактам
+      </h3>
+      <div class="about__logo about__logo--down"></div>
+    </section>
+    <div class="footer__info">
+      <p class="footer__text">
+        © 2019. Автор проекта, дизайнер и программист :
+      </p>
+      <p class="footer__name">Bjorn Skarsgard</p>
+      <p class="footer__email">bjornskarsgarddev@gmail.com</p>
+    </div>
+  </footer>
+  <script src="js/particles/particles.js"></script>
+  <script src="js/particles/app.js"></script>
+  <script src="js/particles/lib/stats.js"></script>
+  <!-- <script>
       var count_particles, stats, update;
       stats = new Stats();
       stats.setMode(0);
@@ -335,5 +393,6 @@
       };
       requestAnimationFrame(update);
     </script> -->
-  </body>
+</body>
+
 </html>

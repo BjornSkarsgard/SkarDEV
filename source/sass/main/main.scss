@@ -1,0 +1,21 @@
+.main::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    top: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.main__block {
+    width: 1405px;
+    display: flex;
+    // flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    background: #191a1c;
+    position: relative;
+}
