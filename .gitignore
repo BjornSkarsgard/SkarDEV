@@ -4,6 +4,7 @@
 *.ai
 *.log
 *.pdf
+*.todo
 *.psd
 *.sublime*
 build/
