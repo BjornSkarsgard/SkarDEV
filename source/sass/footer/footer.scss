@@ -1,0 +1,33 @@
+.footer__block {
+    background-color: #101011;
+}
+
+.footer__info {
+    width: 1405px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 45px 0 45px 0;
+    color: #9d9d9d;
+    font-size: 15px;
+}
+
+.footer__text {
+    margin: 0;
+}
+
+.footer__name {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer__email {
+    margin: 0;
+    color: #94edff;
+    font-weight: 100;
+}

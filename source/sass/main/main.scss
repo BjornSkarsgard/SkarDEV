@@ -1,3 +1,7 @@
+.main {
+    position: relative;
+}
+
 .main::before {
     content: "";
     position: absolute;
@@ -5,7 +9,7 @@
     height: 78px;
     background-color: rgba(255, 255, 255, 0);
     box-shadow: 0 0 40px rgba(0, 0, 0, 1);
-    top: 0;
+    top: -79px;
     z-index: 10;
     pointer-events: none;
 }

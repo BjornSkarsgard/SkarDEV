@@ -1,0 +1,105 @@
+.paginator {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.paginator__title {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 120px;
+    font-size: 25px;
+    text-transform: uppercase;
+    background: linear-gradient(-140deg, #989898, #eeeeee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paginator__title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 28px;
+    height: 3px;
+    background: linear-gradient(47deg, #fd00ff, #0032ff, #00ffa7, #ff00f5);
+    background-size: 600% 600%;
+    animation: gradient-anim 10s ease infinite;
+}
+
+.paginator__block {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.paginator__items {
+    padding: 6px 8px 6px 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #1f2123;
+    animation: neon-paginator 3s ease-in-out infinite alternate;
+    box-shadow: 0 0 2px #94edff, 0 0 5px #94edff, 0 0 10px #94edff,
+        inset 0 0 5px #000000, inset 0 0 10px #000000, inset 0 0 15px #000000;
+    vertical-align: bottom;
+}
+
+.paginator__link {
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4px 0 4px 0;
+    background-color: #2a2c2f;
+    width: 32px;
+    border: 2px solid #141617;
+    border-radius: 3px;
+    margin: 0 3px 0 3px;
+    text-shadow: 0 0 4px #000000, 0 0 5px #000000, 0 0 7px #000000, 0 0 10px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.paginator__link:hover {
+    background-color: #43484c;
+    transition: all 0.2s ease-in-out;
+}
+
+.paginator__link--unactive {
+    color: rgba(255, 255, 255, 0.2);
+    background-color: #1c1e20;
+    cursor: not-allowed;
+    text-shadow: none;
+}
+
+.paginator__link--unactive:hover {
+    background-color: #1c1e20;
+}
+
+.paginator__item:last-of-type>a {
+    color: #94edff;
+    text-shadow: 0 0 2px #94edff, 0 0 5px #94edff, 0 0 10px #94edff;
+}
+
+.paginator__item:first-of-type>a {
+    color: rgba(148, 237, 255, 0.2)
+}
+
+@keyframes neon-paginator {
+    0% {
+        box-shadow: 0 0 2px #94edff,
+            0 0 5px #94edff,
+            0 0 10px #94edff;
+    }
+
+    50% {
+        box-shadow: 0 0 4px #3532f0, 0 0 7px #3532f0, 0 0 15px #3532f0;
+    }
+
+    100% {
+        box-shadow: 0 0 4px #da32f0, 0 0 7px #da32f0, 0 0 15px #da32f0;
+    }
+}
