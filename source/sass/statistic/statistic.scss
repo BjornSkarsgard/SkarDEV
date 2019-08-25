@@ -49,277 +49,126 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-:root {
-    --color-1: rgba(0, 255, 0, 1);
-    --color-04: rgba(0, 255, 0, 0.4);
-    --color-00: rgba(0, 255, 0, 0.0);
-
-    --color-2-1: rgba(248, 83, 252, 1);
-    --color-2-04: rgba(248, 83, 252, 0.4);
-    --color-2-00: rgba(248, 83, 252, 0.0);
-
-    --color-3-1: rgba(0, 255, 255, 1);
-    --color-3-04: rgba(0, 255, 255, 0.4);
-    --color-3-00: rgba(0, 255, 255, 0.0);
+.statistic__pulse--online {
+    position: relative;
 }
 
-
-.statistic_pulse--online {
+svg {
     position: absolute;
-    top: -56px;
-    left: -108px;
-    height: 150px;
-    width: 150px;
-    margin: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -40px;
+    display: block;
+    margin-bottom: 30px;
+    overflow: visible;
 
-
-    &::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        background: var(--color-1);
-        border-radius: 50%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        animation: cdot linear 3s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-
-    }
-
-    .statistic__wave--online {
-        position: absolute;
-        left: 7%;
-        top: 7%;
-        width: 86%;
-        height: 86%;
-        background: var(--color-04);
-        border-radius: 50%;
-        opacity: 0;
-        animation: radarWave cubic-bezier(0, .54, .53, 1) 3s 0s;
-        animation-iteration-count: infinite;
-
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 7%;
-            top: 7%;
-            width: 86%;
-            height: 86%;
-            background: var(--color-04);
-            border-radius: 50%;
-            opacity: 0;
-            animation: radarWave cubic-bezier(0, .54, .53, 1) 3s 0.1s;
-            animation-iteration-count: infinite;
-
+    &.active {
+        rect {
+            width: 80px;
+            transition: .25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            ;
         }
     }
 }
 
-
-
-.statistic_pulse--files {
-    position: absolute;
-    top: -56px;
-    left: -108px;
-    height: 150px;
-    width: 150px;
-    margin: auto;
-
-    &::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        background: var(--color-2-1);
-        border-radius: 50%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        animation: cdott linear 3s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-    }
-
-    .statistic__wave--files {
-        position: relative;
-        left: 7%;
-        top: 7%;
-        width: 86%;
-        height: 86%;
-        background: var(--color-2-04);
-        border-radius: 50%;
-        opacity: 0;
-        animation: radarWavett cubic-bezier(0, .54, .53, 1) 3s 0s;
-        animation-iteration-count: infinite;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 7%;
-            top: 7%;
-            width: 86%;
-            height: 86%;
-            background: var(--color-2-04);
-            border-radius: 50%;
-            opacity: 0;
-            animation: radarWavett cubic-bezier(0, .54, .53, 1) 3s 0.1s;
-            animation-iteration-count: infinite;
-        }
-    }
-}
-
-// .statistic_pulse--down {
-//     position: absolute;
-//     top: -60px;
-//     left: -100px;
-//     height: 150px;
-//     width: 150px;
-//     margin: auto;
-
-//     &::after {
-//         content: '';
-//         position: absolute;
-//         width: 6px;
-//         height: 6px;
-//         background: var(--color-1);
-//         border-radius: 50%;
-//         left: 50%;
-//         top: 50%;
-//         transform: translate(-50%, -50%);
-//         animation: cdot linear 3s;
-//         animation-iteration-count: infinite;
-//         animation-fill-mode: forwards;
-//     }
-
-//     .statistic__wave--down {
-//         position: relative;
-//         left: 7%;
-//         top: 7%;
-//         width: 86%;
-//         height: 86%;
-//         background: var(--color-04);
-//         border-radius: 50%;
-//         opacity: 0;
-//         animation: radarWave cubic-bezier(0, .54, .53, 1) 3s 0s;
-//         animation-iteration-count: infinite;
-
-//         &::after {
-//             content: '';
-//             position: absolute;
-//             left: 7%;
-//             top: 7%;
-//             width: 86%;
-//             height: 86%;
-//             background: var(--color-04);
-//             border-radius: 50%;
-//             opacity: 0;
-//             animation: radarWave cubic-bezier(0, .54, .53, 1) 3s 0.1s;
-//             animation-iteration-count: infinite;
-//         }
-//     }
-// }
-
-
-// @keyframes cdot {
-//     0% {
-//         opacity: 0;
-//         background: var(--color-1);
-//     }
-
-//     50% {
-//         opacity: 0.5;
-//     }
-
-//     100% {
-//         opacity: 1;
-//         background: var(--color-00);
-//     }
-// }
-
-// @keyframes cdott {
-//         0% {
-//             opacity: 0;
-//             background: var(--color-2-1);
-//         }
-
-//         50% {
-//             opacity: 0.5;
-//         }
-
-//         100% {
-//             opacity: 1;
-//             background: var(--color-2-00);
-//         }
-//     }
-@keyframes radarWave {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    5% {
-        background: var(--color-04);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1);
-        background: var(--color-00);
-    }
-
+circle {
+    transform-origin: 50%;
+    fill: #ffffff;
 }
 
 
-
-@keyframes radarWavett {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    5% {
-        background: var(--color-2-04);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1);
-        background: var(--color-2-00);
-    }
-
+// Example Two
+.statistic__online-center {
+    fill: #00ff00;
 }
 
-@keyframes radarWavettt {
+.statistic__online-1 {
+    opacity: 1;
+    animation: expandCOne 3s infinite;
+    fill: #00ff00;
+}
+
+.statistic__online-2 {
+    opacity: 0.8;
+    animation-delay: .5s;
+    animation: expandCTwo 3s infinite;
+    animation-delay: 0.6s;
+    transition: .4s;
+    fill: #00ff00;
+}
+
+
+.statistic__files-center {
+    fill: #f853fc;
+}
+
+.statistic__files-1 {
+    opacity: 1;
+    animation: expandCOne 3s infinite;
+    animation-delay: 2.3s;
+    fill: #f853fc;
+}
+
+.statistic__files-2 {
+    opacity: 0.8;
+    animation-delay: .5s;
+    animation: expandCTwo 3s infinite;
+    animation-delay: 2.9s;
+    transition: .4s;
+    fill: #f853fc;
+}
+
+.statistic__down-center {
+    fill: #00ffff;
+}
+
+.statistic__down-1 {
+    opacity: 1;
+    animation: expandCOne 4s infinite;
+    animation-delay: 2.1s;
+    fill: #00ffff;
+}
+
+.statistic__down-2 {
+    opacity: 0.8;
+    animation-delay: .5s;
+    animation: expandCTwo 4s infinite;
+    animation-delay: 1.5s;
+    transition: .4s;
+    fill: #00ffff;
+}
+
+@keyframes expandCOne {
     0% {
-        opacity: 0;
-        transform: scale(0);
+        transform: scale(1);
     }
 
-    5% {
-        background: var(--color-3-04);
-        opacity: 1;
+    90% {
+        transform: scale(13);
+        opacity: 0;
     }
 
     100% {
+        transform: scale(13);
+        opacity: 0;
+    }
+}
+
+@keyframes expandCTwo {
+    0% {
         transform: scale(1);
-        background: var(--color-3-00);
     }
 
+    90% {
+        transform: scale(13.7);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(13.7);
+        opacity: 0;
+    }
 }
