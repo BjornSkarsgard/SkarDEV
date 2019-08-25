@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>SkarsgarDev</title>
-  <link href="/css/style.min.css" rel="stylesheet" />
+  <link href="css/style.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=cyrillic"
@@ -23,7 +23,7 @@
   <!-------------------------------------->
   <header class="header">
     <div class="header__block">
-      <a class="header__logo-link" href="/index.html">
+      <a class="header__logo-link" href="index.html">
         <div class="header__logo">
       </a>
       <div class="header__title-logo">
@@ -62,7 +62,7 @@
           <h1 class="materials__title">Новое на сайте</h1>
           <article class="materials__block block">
             <div class="block__poster">
-              <img class="block__img" src="/img/photo.png" alt="photo" />
+              <img class="block__img" src="img/photo.png" alt="photo" />
             </div>
             <div class="block__text">
               <div class="block__details ">
@@ -85,7 +85,7 @@
           </article>
           <article class="materials__block block">
             <div class="block__poster">
-              <img class="block__img" src="/img/photo1.png" alt="photo" />
+              <img class="block__img" src="img/photo1.png" alt="photo" />
             </div>
             <div class="block__text">
               <div class="block__details ">
@@ -113,7 +113,7 @@
           </article>
           <article class="materials__block block">
             <div class="block__poster">
-              <img class="block__img" src="/img/photo2.png" alt="photo" />
+              <img class="block__img" src="img/photo2.png" alt="photo" />
             </div>
             <div class="block__text">
               <div class="block__details ">
@@ -200,7 +200,11 @@
         <section class="sidebar__statistic statistic">
           <div class="statistic__online" aria-label="Текущий онлайн на сайте">
             <div class="statistic_pulse statistic_pulse--online">
-              <div class="statistic__wave statistic__wave--online"></div>
+              <svg>
+                <circle class="pulse statistic__online-1" cx="50%" cy="50%" r="3px" />
+                <circle class="pulse statistic__online-2" cx="50%" cy="50%" r="3px" />
+                <circle class="pulse statistic__online-center" cx="50%" cy="50%" r="3px" />
+              </svg>
             </div>
             <div class="statistic__info statistic__info--online">
               <span class="statistic__num statistic__num--online">98</span>
@@ -209,7 +213,11 @@
           </div>
           <div class="statistic__files" aria-label="Загружено всего файлов">
             <div class="statistic_pulse statistic_pulse--files">
-              <div class="statistic__wave statistic__wave--files"></div>
+              <svg>
+                <circle class="pulse statistic__files-1" cx="50%" cy="50%" r="3px" />
+                <circle class="pulse statistic__files-2" cx="50%" cy="50%" r="3px" />
+                <circle class="pulse statistic__files-center" cx="50%" cy="50%" r="3px" />
+              </svg>
             </div>
             <div class="statistic__info statistic__info--files">
               <span class="statistic__num statistic__num--files">54</span>
@@ -218,7 +226,11 @@
           </div>
           <div class="statistic__down" aria-label="Скачано всего файлов">
             <div class="statistic_pulse statistic_pulse--down">
-              <div class="statistic__wave statistic__wave--down"></div>
+              <svg>
+                <circle class="pulse statistic__down-1" cx="50%" cy="50%" r="3px" />
+                <circle class="pulse statistic__down-2" cx="50%" cy="50%" r="3px" />
+                <circle class="pulse statistic__down-center" cx="50%" cy="50%" r="3px" />
+              </svg>
             </div>
             <div class="statistic__info statistic__info--down">
               <span class="statistic__num statistic__num--down">196</span>
@@ -291,22 +303,23 @@
           <h2 class="social__title">Мои соцсети</h2>
           <ul class="social__items">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="#">ВКонтакте</a>
+              <a class="social__link social__link--vk" href="https://vk.com/sportpatriot72">ВКонтакте</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--git" href="#">GitHub</a>
+              <a class="social__link social__link--git" href="https://github.com/BjornSkarsgard">GitHub</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--gm" href="#">Gmail</a>
+              <a class="social__link social__link--gm" href="mailto:bjornskarsgarddev@gmail.com">Gmail</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--yt" href="#">YouTube</a>
+              <a class="social__link social__link--yt"
+                href="https://www.youtube.com/channel/UCjJ2V4X_YwyYoEFX2xCktUg?view_as=subscriber">YouTube</a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--inst" href="#">Instagram</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--ds" href="#">Discord</a>
+              <a class="social__link social__link--ds" href="https://discord.gg/Ap5ckqQ">Discord</a>
             </li>
           </ul>
         </section>

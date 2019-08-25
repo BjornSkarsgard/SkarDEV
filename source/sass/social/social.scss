@@ -65,9 +65,6 @@
 }
 
 
-
-
-
 .social__link::before {
     content: "";
     position: absolute;
@@ -106,51 +103,51 @@
 }
 
 .social__link--vk::before {
-    background: url(/img/007-vk.svg) 50% 50% no-repeat;
+    background: url(../img/007-vk.svg) 50% 50% no-repeat;
 }
 
 .social__link--vk::after {
-    background: url(/img/007-vk.svg) 50% 50% no-repeat;
+    background: url(../img/007-vk.svg) 50% 50% no-repeat;
 }
 
 .social__link--git::before {
-    background: url(/img/008-github.svg) 50% 50% no-repeat;
+    background: url(../img/008-github.svg) 50% 50% no-repeat;
 }
 
 .social__link--git::after {
-    background: url(/img/008-github.svg) 50% 50% no-repeat;
+    background: url(../img/008-github.svg) 50% 50% no-repeat;
 }
 
 .social__link--gm::before {
-    background: url(/img/009-gmail.svg) 50% 50% no-repeat;
+    background: url(../img/009-gmail.svg) 50% 50% no-repeat;
 }
 
 .social__link--gm::after {
-    background: url(/img/009-gmail.svg) 50% 50% no-repeat;
+    background: url(../img/009-gmail.svg) 50% 50% no-repeat;
 }
 
 .social__link--yt::before {
-    background: url(/img/011-youtube.svg) 50% 50% no-repeat;
+    background: url(../img/011-youtube.svg) 50% 50% no-repeat;
 }
 
 .social__link--yt::after {
-    background: url(/img/011-youtube.svg) 50% 50% no-repeat;
+    background: url(../img/011-youtube.svg) 50% 50% no-repeat;
 }
 
 .social__link--inst::before {
-    background: url(/img/010-instagram.svg) 50% 50% no-repeat;
+    background: url(../img/010-instagram.svg) 50% 50% no-repeat;
 }
 
 .social__link--inst::after {
-    background: url(/img/010-instagram.svg) 50% 50% no-repeat;
+    background: url(../img/010-instagram.svg) 50% 50% no-repeat;
 }
 
 .social__link--ds::before {
-    background: url(/img/013-discord.svg) 50% 50% no-repeat;
+    background: url(../img/013-discord.svg) 50% 50% no-repeat;
 }
 
 .social__link--ds::after {
-    background: url(/img/013-discord.svg) 50% 50% no-repeat;
+    background: url(../img/013-discord.svg) 50% 50% no-repeat;
 }
 
 
