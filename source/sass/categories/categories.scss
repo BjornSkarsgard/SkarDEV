@@ -1,0 +1,240 @@
+.categories__title {
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    margin-left: 19px;
+    letter-spacing: -1.8px;
+    font-family: $bold;
+    text-transform: uppercase;
+    background: linear-gradient(-140deg, #989898, #eeeeee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.categories__title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 28px;
+    height: 3px;
+    background: linear-gradient(47deg, #f700ff, #00ffb3, #c8ff00, #ff00f5);
+    background-size: 500% 500%;
+    animation: gradient-anim-categorie 10s ease infinite;
+}
+
+.categories__items:hover {
+    background: #161618;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.categories__navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.categories__navigation>ul>li {
+    position: relative;
+}
+
+.categories__items {
+    position: relative;
+    display: block;
+    padding: 15px 61px;
+    text-transform: uppercase;
+    font-size: 18px;
+    outline: 0;
+    background: #1b1b1e;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px #111;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.categories__wrapper {
+    display: none;
+    background: #202023;
+}
+
+.categories__item {
+    position: relative;
+    background: #202023;
+    display: block;
+    padding: 15px 18px;
+    margin: 0;
+    margin: 2px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.categories__item:hover {
+    background: #1a1a1c;
+    box-shadow: 0 0 2px #1fff2f,
+        0 0 5px #1fff2f;
+    color: #f5a100;
+    transition: all 0.2s ease-in-out;
+}
+
+.categories__item-desc {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    right: 18px;
+    top: 19px;
+    transition: all 0.2s ease-in-out;
+}
+
+.categories__item:hover .categories__item-desc {
+    color: #f5a100;
+    transition: all 0.2s ease-in-out;
+}
+
+/* активный переключатель */
+.categories__items--drop:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 20px;
+    border: 1px solid #94edff;
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+.categories__dropdown-items>a.active:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 20px;
+    background: #94edff;
+    border: 1px solid #cf6fb2;
+    box-shadow: 0 0 2px #cf6fb2, 0 0 5px #cf6fb2, 0 0 9px #cf6fb2, 0 0 12px #cf6fb2;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.categories__items-span::before {
+    content: "";
+    position: absolute;
+    background-size: 35px;
+    width: 33px;
+    height: 33px;
+    top: 9px;
+    left: 13px;
+    filter: blur(2px);
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}
+
+.categories__items:hover .categories__items-span::before {
+    content: "";
+    position: absolute;
+    background-size: 35px;
+    width: 33px;
+    height: 33px;
+    top: 9px;
+    left: 13px;
+    filter: blur(2px);
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+}
+
+.categories__items-span::after {
+    content: "";
+    position: absolute;
+    background-size: 25px;
+    width: 23px;
+    height: 23px;
+    top: 14px;
+    left: 18px;
+
+}
+
+.categories__items--program::before {
+    background: url(/img/003-programming.svg) 50% 50% no-repeat;
+}
+
+.categories__items--program::after {
+    background: url(/img/003-programming.svg) 50% 50% no-repeat;
+}
+
+.categories__items--port::before {
+    background: url(/img/002-suitcase.svg) 50% 50% no-repeat;
+}
+
+.categories__items--port::after {
+    background: url(/img/002-suitcase.svg) 50% 50% no-repeat;
+}
+
+.categories__items--windows::before {
+    background: url(/img/002-windows.svg) 50% 50% no-repeat;
+}
+
+.categories__items--windows::after {
+    background: url(/img/002-windows.svg) 50% 50% no-repeat;
+}
+
+.categories__items--design::before {
+    background: url(/img/001-photoshop.svg) 50% 50% no-repeat;
+}
+
+.categories__items--design::after {
+    background: url(/img/001-photoshop.svg) 50% 50% no-repeat;
+}
+
+.categories__items--dev::before {
+    background: url(/img/006-html-5.svg) 50% 50% no-repeat;
+}
+
+.categories__items--dev::after {
+    background: url(/img/006-html-5.svg) 50% 50% no-repeat;
+}
+
+// Классы для JS
+
+// .unactive__light {
+//     position: absolute;
+//     width: 15px;
+//     height: 15px;
+//     top: 15px;
+//     right: 20px;
+//     border: 1px solid #94edff;
+//     border-radius: 10px;
+// }
+
+// .active__light {
+//     position: absolute;
+//     width: 15px;
+//     height: 15px;
+//     top: 15px;
+//     right: 20px;
+//     background: #94edff;
+//     border: 1px solid #cf6fb2;
+//     box-shadow: 0 0 2px #cf6fb2, 0 0 5px #cf6fb2, 0 0 9px #cf6fb2, 0 0 12px #cf6fb2;
+//     border-radius: 10px;
+// }
+
+
+@keyframes gradient-anim-categorie {
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
+}

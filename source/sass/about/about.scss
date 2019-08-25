@@ -1,0 +1,49 @@
+.about {
+    position: relative;
+    background-color: #161618;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+
+.about__block {
+    width: 1405px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+.about__box {
+    width: 417px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    position: relative;
+}
+
+.about__logo {
+    background: url(/img/logo.png) 50% 50% no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 85px;
+    padding-left: 15px;
+    padding-top: 0;
+    margin-bottom: 5px;
+}
+
+.about__logo--up {
+    padding-top: 0px;
+}
+
+.about__logo--down {
+    margin-left: auto;
+    margin-bottom: 19px;
+}
+
+.about__desc {
+    font-size: 15px;
+    font-weight: 100;
+    color: #9d9d9d;
+    display: inline-block;
+    margin: 0;
+    margin-left: 40px;
+    letter-spacing: 0.2px;
+}
