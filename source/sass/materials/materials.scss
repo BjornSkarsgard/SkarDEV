@@ -69,9 +69,9 @@
 
 @keyframes neon-line-materials {
     0% {
-        box-shadow: 0 0 10px #fd00ff,
-            0 0 15px #fd00ff,
-            0 0 20px #fd00ff;
+        box-shadow: 0 0 10px $purple,
+            0 0 15px $purple,
+            0 0 20px $purple;
     }
 
     50% {
@@ -81,8 +81,8 @@
     }
 
     100% {
-        box-shadow: 0 0 10px #ff00f5,
-            0 0 15px #ff00f5,
-            0 0 20px #ff00f5;
+        box-shadow: 0 0 10px $purple,
+            0 0 15px $purple,
+            0 0 20px $purple;
     }
 }

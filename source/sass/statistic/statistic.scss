@@ -23,17 +23,17 @@
 }
 
 .statistic__num--online {
-    color: #00ff00;
+    color: $green;
     font-size: 20px;
 }
 
 .statistic__num--files {
-    color: #f853fc;
+    color: $purple;
     font-size: 20px;
 }
 
 .statistic__num--down {
-    color: #00ffff;
+    color: $bright-blue;
     font-size: 20px;
 }
 
@@ -45,7 +45,7 @@
     position: absolute;
     left: -8px;
     font-size: 12px;
-    color: #42474b;
+    color: $bright-gray;
 }
 
 
@@ -82,13 +82,13 @@ circle {
 
 // Example Two
 .statistic__online-center {
-    fill: #00ff00;
+    fill: $green;
 }
 
 .statistic__online-1 {
     opacity: 1;
     animation: expandCOne 3s infinite;
-    fill: #00ff00;
+    fill: $green;
 }
 
 .statistic__online-2 {
@@ -97,19 +97,19 @@ circle {
     animation: expandCTwo 3s infinite;
     animation-delay: 0.6s;
     transition: .4s;
-    fill: #00ff00;
+    fill: $green;
 }
 
 
 .statistic__files-center {
-    fill: #f853fc;
+    fill: $purple;
 }
 
 .statistic__files-1 {
     opacity: 1;
     animation: expandCOne 3s infinite;
     animation-delay: 2.3s;
-    fill: #f853fc;
+    fill: $purple;
 }
 
 .statistic__files-2 {
@@ -118,18 +118,18 @@ circle {
     animation: expandCTwo 3s infinite;
     animation-delay: 2.9s;
     transition: .4s;
-    fill: #f853fc;
+    fill: $purple;
 }
 
 .statistic__down-center {
-    fill: #00ffff;
+    fill: $bright-blue;
 }
 
 .statistic__down-1 {
     opacity: 1;
     animation: expandCOne 4s infinite;
     animation-delay: 2.1s;
-    fill: #00ffff;
+    fill: $bright-blue;
 }
 
 .statistic__down-2 {
@@ -138,7 +138,7 @@ circle {
     animation: expandCTwo 4s infinite;
     animation-delay: 1.5s;
     transition: .4s;
-    fill: #00ffff;
+    fill: $bright-blue;
 }
 
 @keyframes expandCOne {

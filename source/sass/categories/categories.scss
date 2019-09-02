@@ -49,21 +49,21 @@
     font-size: 18px;
     outline: 0;
     background: #1b1b1e;
-    color: #ffffff;
+    color: $white;
     text-decoration: none;
-    text-shadow: 1px 1px 3px #111;
+    text-shadow: 1px 1px 3px #111111;
     transition: all 0.2s ease-in-out;
 }
 
 
 .categories__wrapper {
     display: none;
-    background: #202023;
+    background: $gray;
 }
 
 .categories__item {
     position: relative;
-    background: #202023;
+    background: $gray;
     display: block;
     padding: 15px 18px;
     margin: 0;
@@ -77,9 +77,9 @@
 
 .categories__item:hover {
     background: #1a1a1c;
-    box-shadow: 0 0 2px #1fff2f,
-        0 0 5px #1fff2f;
-    color: #f5a100;
+    box-shadow: 0 0 2px $green,
+        0 0 5px $green;
+    color: $orange;
     transition: all 0.2s ease-in-out;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .categories__item:hover .categories__item-desc {
-    color: #f5a100;
+    color: $orange;
     transition: all 0.2s ease-in-out;
 }
 
@@ -105,7 +105,7 @@
     width: 15px;
     height: 15px;
     right: 20px;
-    border: 1px solid #94edff;
+    border: 1px solid $blue;
     opacity: 0.3;
     border-radius: 10px;
 }
@@ -116,9 +116,9 @@
     width: 15px;
     height: 15px;
     right: 20px;
-    background: #94edff;
-    border: 1px solid #cf6fb2;
-    box-shadow: 0 0 2px #cf6fb2, 0 0 5px #cf6fb2, 0 0 9px #cf6fb2, 0 0 12px #cf6fb2;
+    background: $blue;
+    border: 1px solid $pink;
+    box-shadow: 0 0 2px $pink, 0 0 5px $pink, 0 0 9px $pink, 0 0 12px $pink;
     border-radius: 10px;
     opacity: 1;
 }

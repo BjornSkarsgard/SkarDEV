@@ -31,7 +31,7 @@
     font-size: 18px;
     outline: 0;
     background: #202023;
-    color: #ffffff;
+    color: $white;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
@@ -42,13 +42,13 @@
 }
 
 .social__item:hover .social__link {
-    box-shadow: 0 0 2px #94edff, 0 0 5px #94edff;
+    box-shadow: 0 0 2px $blue, 0 0 5px $blue;
     transition: all 0.2s ease-in-out;
 }
 
 .social__link {
     position: relative;
-    background: #202023;
+    background: $gray;
     display: block;
     padding: 15px 61px;
     margin: 0;
@@ -60,8 +60,8 @@
 }
 
 .social__link:hover {
-    background: #161618;
-    color: #f5a100;
+    background: $dark-gray;
+    color: $orange;
 }
 
 
