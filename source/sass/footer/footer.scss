@@ -19,7 +19,7 @@
 }
 
 .footer__name {
-    color: white;
+    color: $white;
     font-weight: 600;
     margin: 0;
     margin-left: 5px;
@@ -28,6 +28,6 @@
 
 .footer__email {
     margin: 0;
-    color: #94edff;
+    color: $blue;
     font-weight: 100;
 }

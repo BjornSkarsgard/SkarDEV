@@ -42,7 +42,7 @@
     justify-content: center;
     background-color: #1f2123;
     animation: neon-paginator 3s ease-in-out infinite alternate;
-    box-shadow: 0 0 2px #94edff, 0 0 5px #94edff, 0 0 10px #94edff,
+    box-shadow: 0 0 2px $blue, 0 0 5px $blue, 0 0 10px $blue,
         inset 0 0 5px #000000, inset 0 0 10px #000000, inset 0 0 15px #000000;
     vertical-align: bottom;
 }
@@ -55,7 +55,7 @@
     padding: 4px 0 4px 0;
     background-color: #2a2c2f;
     width: 32px;
-    border: 2px solid #141617;
+    border: 2px solid $dark-gray;
     border-radius: 3px;
     margin: 0 3px 0 3px;
     text-shadow: 0 0 4px #000000, 0 0 5px #000000, 0 0 7px #000000, 0 0 10px #000000;
@@ -64,7 +64,7 @@
 
 
 .paginator__link:hover {
-    background-color: #43484c;
+    background-color: $bright-gray;
     transition: all 0.2s ease-in-out;
 }
 
@@ -80,8 +80,8 @@
 }
 
 .paginator__item:last-of-type>a {
-    color: #94edff;
-    text-shadow: 0 0 2px #94edff, 0 0 5px #94edff, 0 0 10px #94edff;
+    color: $blue;
+    text-shadow: 0 0 2px $blue, 0 0 5px $blue, 0 0 10px $blue;
 }
 
 .paginator__item:first-of-type>a {
@@ -90,9 +90,9 @@
 
 @keyframes neon-paginator {
     0% {
-        box-shadow: 0 0 2px #94edff,
-            0 0 5px #94edff,
-            0 0 10px #94edff;
+        box-shadow: 0 0 2px $blue,
+            0 0 5px $blue,
+            0 0 10px $blue;
     }
 
     50% {
@@ -100,6 +100,6 @@
     }
 
     100% {
-        box-shadow: 0 0 4px #da32f0, 0 0 7px #da32f0, 0 0 15px #da32f0;
+        box-shadow: 0 0 4px $purple, 0 0 7px $purple, 0 0 15px $purple;
     }
 }
