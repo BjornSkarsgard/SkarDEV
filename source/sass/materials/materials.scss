@@ -38,8 +38,35 @@
     position: relative;
 }
 
+
+// .materials__title--portfolio::after {
+//     content: "";
+//     cursor: pointer;
+//     top: 3px;
+//     right: -37px;
+//     background: url(../img/sort.svg) 50% 50% no-repeat;
+//     width: 22px;
+//     height: 22px;
+//     background-size: 22px;
+//     position: absolute;
+
+// }
+
 .materials__box {
     position: relative;
+}
+
+.materials__sorting {
+    position: absolute;
+    left: 150px;
+    width: 23px;
+    height: 23px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.materials__path-2 {
+    fill: $blue;
 }
 
 .materials__box::before {

@@ -31,6 +31,7 @@
 
 
 
+
 .categories__navigation ul {
     margin: 0;
     padding: 0;
@@ -78,7 +79,7 @@
 .categories__item:hover {
     background: #1a1a1c;
     box-shadow: 0 0 2px $green,
-        0 0 5px $green;
+    0 0 5px $green;
     color: $orange;
     transition: all 0.2s ease-in-out;
 }
@@ -98,7 +99,9 @@
     transition: all 0.2s ease-in-out;
 }
 
-/* активный переключатель */
+.categories__items--active {
+    background: #161618;
+}/* активный переключатель */
 .categories__items--drop:before {
     content: '';
     position: absolute;

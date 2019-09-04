@@ -60,7 +60,29 @@
         <div class="materials__box">
           <h1 class="materials__title">Новое на сайте</h1>
           <article class="materials__block block">
-            <div class="block__poster">
+            <div class="block__poster gradient-wrap">
+              <img class="block__img" src="img/cat-energy.png" alt="photo">
+            </div>
+            <div class="block__text">
+              <div class="block__details ">
+                <a class="block__title-link" href="#">
+                  <h2 class="block__title">Сайт "CAT ENERGY"</h2>
+                </a>
+                <p class="block__date">18.08.2019</p>
+                <p class="block__kategory"><a class="block__kategory-link block__kategory-portfolio" href="portfolio.html">Портфолио</a>
+                </p>
+                <p class="block__desc">
+                  Когда я только учился верстать, вторым моим проектом стал<br>
+                  Cat Energy - сайт с адаптивной версткой
+                </p>
+              </div>
+              <div class="block__links">
+                <a class="block__link block__link--detail" href="#">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="materials__block block">
+            <div class="block__poster gradient-wrap">
               <img class="block__img" src="img/photo.png" alt="photo">
             </div>
             <div class="block__text">
@@ -83,7 +105,7 @@
             </div>
           </article>
           <article class="materials__block block">
-            <div class="block__poster">
+            <div class="block__poster gradient-wrap">
               <img class="block__img" src="img/photo1.png" alt="photo">
             </div>
             <div class="block__text">
@@ -110,7 +132,7 @@
             </div>
           </article>
           <article class="materials__block block">
-            <div class="block__poster">
+            <div class="block__poster gradient-wrap">
               <img class="block__img" src="img/photo2.png" alt="photo">
             </div>
             <div class="block__text">
@@ -247,7 +269,7 @@
                 <a class="categories__items" href="#"><span class="categories__items-span categories__items--program"></span>Мой софт</a>
               </li>
               <li>
-                <a class="categories__items" href="#"><span class="categories__items-span categories__items--port"></span>Портфолио</a>
+                <a class="categories__items" href="portfolio.html"><span class="categories__items-span categories__items--port"></span>Портфолио</a>
               </li>
               <li class="categories__dropdown-items">
                 <div id="light" class="categories__indicator unactive__light"></div>
@@ -352,6 +374,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/slider/slider.js"></script>
   <script src="js/button/button.js"></script>
+  <script src="js/dist/grade.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('load', function () {
+      /*
+          A NodeList of all your image containers (Or a single Node).
+          The library will locate an <img /> within each
+          container to create the gradient from.
+       */
+      Grade(document.querySelectorAll('.gradient-wrap'))
+    })
+  </script>
 </body>
 
 </html>
