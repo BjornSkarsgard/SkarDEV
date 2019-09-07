@@ -10,7 +10,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .categories__title::before {
@@ -29,9 +28,6 @@
     transition: all 0.2s ease-in-out;
 }
 
-
-
-
 .categories__navigation ul {
     margin: 0;
     padding: 0;
@@ -43,6 +39,7 @@
 }
 
 .categories__items {
+    box-sizing: border-box;
     position: relative;
     display: block;
     padding: 15px 61px;
@@ -56,13 +53,13 @@
     transition: all 0.2s ease-in-out;
 }
 
-
 .categories__wrapper {
     display: none;
     background: $gray;
 }
 
 .categories__item {
+    box-sizing: border-box;
     position: relative;
     background: $gray;
     display: block;
@@ -78,8 +75,7 @@
 
 .categories__item:hover {
     background: #1a1a1c;
-    box-shadow: 0 0 2px $green,
-    0 0 5px $green;
+    box-shadow: 0 0 2px $green, 0 0 5px $green;
     color: $orange;
     transition: all 0.2s ease-in-out;
 }
@@ -101,7 +97,11 @@
 
 .categories__items--active {
     background: #161618;
-}/* активный переключатель */
+}
+
+
+/* активный переключатель */
+
 .categories__items--drop:before {
     content: '';
     position: absolute;
@@ -160,7 +160,6 @@
     height: 23px;
     top: 14px;
     left: 18px;
-
 }
 
 .categories__items--program::before {
@@ -204,7 +203,6 @@
 }
 
 // Классы для JS
-
 // .unactive__light {
 //     position: absolute;
 //     width: 15px;
@@ -214,7 +212,6 @@
 //     border: 1px solid #94edff;
 //     border-radius: 10px;
 // }
-
 // .active__light {
 //     position: absolute;
 //     width: 15px;
@@ -226,17 +223,13 @@
 //     box-shadow: 0 0 2px #cf6fb2, 0 0 5px #cf6fb2, 0 0 9px #cf6fb2, 0 0 12px #cf6fb2;
 //     border-radius: 10px;
 // }
-
-
 @keyframes gradient-anim-categorie {
     0% {
         background-position: 0% 51%
     }
-
     50% {
         background-position: 100% 50%
     }
-
     100% {
         background-position: 0% 51%
     }

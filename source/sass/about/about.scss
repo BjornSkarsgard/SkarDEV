@@ -2,6 +2,7 @@
     position: relative;
     background-color: #161618;
     box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    box-sizing: border-box;
 }
 
 .about__block {
@@ -9,6 +10,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
+    box-sizing: border-box;
 }
 
 .about__box {
@@ -17,6 +19,7 @@
     flex-direction: column;
     margin-right: auto;
     position: relative;
+    box-sizing: border-box;
 }
 
 .about__logo {

@@ -47,6 +47,7 @@
 }
 
 .social__link {
+    box-sizing: border-box;
     position: relative;
     background: $gray;
     display: block;
@@ -63,7 +64,6 @@
     background: $dark-gray;
     color: $orange;
 }
-
 
 .social__link::before {
     content: "";
@@ -99,7 +99,6 @@
     height: 23px;
     top: 14px;
     left: 18px;
-
 }
 
 .social__link--vk::before {
@@ -150,17 +149,13 @@
     background: url(../img/013-discord.svg) 50% 50% no-repeat;
 }
 
-
-
 @keyframes gradient-anim-social {
     0% {
         background-position: 0% 51%
     }
-
     50% {
         background-position: 100% 50%
     }
-
     100% {
         background-position: 0% 51%
     }

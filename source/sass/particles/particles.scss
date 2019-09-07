@@ -1,0 +1,23 @@
+.particles-click {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.particles {
+    background-color: $carbon;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: -10;
+}
