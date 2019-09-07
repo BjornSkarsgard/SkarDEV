@@ -1,7 +1,6 @@
 .paginator {
     display: flex;
     flex-direction: column;
-
 }
 
 .paginator__title {
@@ -35,6 +34,7 @@
 }
 
 .paginator__items {
+    box-sizing: border-box;
     padding: 6px 8px 6px 8px;
     display: flex;
     flex-direction: row;
@@ -42,26 +42,25 @@
     justify-content: center;
     background-color: #1f2123;
     animation: neon-paginator 3s ease-in-out infinite alternate;
-    box-shadow: 0 0 2px $blue, 0 0 5px $blue, 0 0 10px $blue,
-        inset 0 0 5px #000000, inset 0 0 10px #000000, inset 0 0 15px #000000;
+    box-shadow: 0 0 2px $blue, 0 0 5px $blue, 0 0 10px $blue, inset 0 0 5px #000000, inset 0 0 10px #000000, inset 0 0 15px #000000;
     vertical-align: bottom;
 }
 
 .paginator__link {
+    box-sizing: border-box;
     text-align: center;
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
     padding: 4px 0 4px 0;
     background-color: #2a2c2f;
-    width: 32px;
+    width: 38px;
     border: 2px solid $dark-gray;
     border-radius: 3px;
     margin: 0 3px 0 3px;
     text-shadow: 0 0 4px #000000, 0 0 5px #000000, 0 0 7px #000000, 0 0 10px #000000;
     transition: all 0.2s ease-in-out;
 }
-
 
 .paginator__link:hover {
     background-color: $bright-gray;
@@ -90,15 +89,11 @@
 
 @keyframes neon-paginator {
     0% {
-        box-shadow: 0 0 2px $blue,
-            0 0 5px $blue,
-            0 0 10px $blue;
+        box-shadow: 0 0 2px $blue, 0 0 5px $blue, 0 0 10px $blue;
     }
-
     50% {
         box-shadow: 0 0 4px #3532f0, 0 0 7px #3532f0, 0 0 15px #3532f0;
     }
-
     100% {
         box-shadow: 0 0 4px $purple, 0 0 7px $purple, 0 0 15px $purple;
     }

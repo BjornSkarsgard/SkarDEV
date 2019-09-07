@@ -2,355 +2,375 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SkarsgarDev</title>
-  <link href="css/style.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=cyrillic" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkarsgarDev</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-  <!-- count particles -->
-  <!-- <div class="count-particles">
-      <span class="js-count-particles">--</span> particles
-    </div> -->
-  <!-- particles.js container -->
-  <div class="particles" id="particles-js"></div>
-  <!-------------------------------------->
-  <header class="header">
-    <div class="header__block">
-      <a class="header__logo-link" href="index.html">
-        <div class="header__logo">
-      </div></a>
-      <div class="header__title-logo">
-        <p class="header__title-logo header__title-logo--skar">Skarsgar</p>
-        <p class="header__title-logo header__title-logo--d">d</p>
-        <p class="header__title-logo header__title-logo--ev">ev</p>
-      </div>
-      <div class="header__menu">
-        <ul class="header__menu-items">
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--best header__menu-link--active" href="#">Лучшее</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--news" href="#">Новости</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--biog" href="#">Биография</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--blog" href="#">Блог</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__search search">
-        <form class="search__form" action="#" method="GET">
-          <input class="search__box" type="search" name="search" id="1" placeholder="Что то потерял? Все найдется!">
-          <input value="" class="search__button" type="submit">
-        </form>
-      </div>
-    </div>
-  </header>
-  <main class="main">
-    <div class="main__block">
-      <section class="materials">
-        <div class="materials__box">
-          <h1 class="materials__title">Новое на сайте</h1>
-          <article class="materials__block block">
-            <div class="block__poster">
-              <img class="block__img" src="img/photo.png" alt="photo">
+    <!-- <div class="js-count-particles"></div> -->
+    <div class="particles" id="particles-js"></div>
+    <div class="particles-click" id="particles-js-click"></div>
+
+    <!-------------------------------------->
+    <header class="header">
+        <div class="header__block">
+            <a class="header__logo-link" href="#">
+                <div class="header__logo"></div>
+            </a>
+            <div class="header__title-logo">
+                <p class="header__title-logo header__title-logo--skar">Skarsgar</p>
+                <p class="header__title-logo header__title-logo--d">d</p>
+                <p class="header__title-logo header__title-logo--ev">ev</p>
             </div>
-            <div class="block__text">
-              <div class="block__details ">
-                <a class="block__title-link" href="#">
-                  <h1 class="block__title">Шрифт - KATANA'S EDGE</h1>
-                </a>
-                <p class="block__date">18.08.2019</p>
-                <p class="block__kategory"><a class="block__kategory-link block__kategory-fonts" href="#">Шрифты</a></p>
-                <p class="block__desc">
-                  Представитель шрифтов из разряда таких, как Edo SZ или True
-                  Lies.<br>
-                  Полезно иметь парочку таковых на разные случаи, рекомендую
-                </p>
-              </div>
-              <div class="block__links">
-                <a class="block__link block__link--detail" href="#">Подробнее</a>
-                <a class="block__link block__link--download" href="#">Скачать</a>
-              </div>
+            <div class="header__menu">
+                <ul class="header__menu-items">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link--best header__menu-link--active" href="#">Лучшее</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link--news" href="#">Новости</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link--biog" href="#">Биография</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link--blog" href="#">Блог</a>
+                    </li>
+                </ul>
             </div>
-          </article>
-          <article class="materials__block block">
-            <div class="block__poster">
-              <img class="block__img" src="img/photo1.png" alt="photo">
+            <div class="header__search search">
+                <form class="search__form" action="#" method="GET">
+                    <input class="search__box" type="search" name="search" id="1" placeholder="Что то потерял? Все найдется!">
+                    <input value="" class="search__button" type="submit">
+                </form>
             </div>
-            <div class="block__text">
-              <div class="block__details ">
-                <a class="block__title-link" href="#">
-                  <h1 class="block__title">GOOGLE PICASA - Лучшая в мире программа для просмотра
-                    картинок!</h1>
-                </a>
-                <p class="block__date">13.07.2019</p>
-                <p class="block__kategory"><a class="block__kategory-link block__kategory-program" href="#">Программы</a>
-                </p>
-                <p class="block__desc">
-                  Вам надоел стандартный просмотрщик картинок? Он слишком уродливый,
-                  <br>
-                  медленный или Вы просто хотите чего-то получше?
-                  <br>
-                  Тогда Google Picasa это Ваше спасение!!!
-                </p>
-              </div>
-              <div class="block__links">
-                <a class="block__link block__link--detail" href="#">Подробнее</a>
-                <a class="block__link block__link--download" href="#">Скачать</a>
-              </div>
-            </div>
-          </article>
-          <article class="materials__block block">
-            <div class="block__poster">
-              <img class="block__img" src="img/photo2.png" alt="photo">
-            </div>
-            <div class="block__text">
-              <div class="block__details ">
-                <a class="block__title-link" href="#">
-                  <h1 class="block__title">Набор крутых иконок</h1>
-                </a>
-                <p class="block__date">20.08.2019</p>
-                <p class="block__kategory"><a class="block__kategory-link block__kategory-design" href="#">Дизайн</a>
-                </p>
-                <p class="block__desc">
-                  Набор кастомных и не только иконок, хорошо подойдет для оформления Windows.
-                  <br>
-                  Все выполнены в едином красивом стиле.
-                </p>
-              </div>
-              <div class="block__links">
-                <a class="block__link block__link--detail" href="#">Подробнее</a>
-                <a class="block__link block__link--download" href="#">Скачать</a>
-              </div>
-            </div>
-          </article>
         </div>
-        <section class="paginator">
-          <h2 class="paginator__title">Страницы</h2>
-          <div class="paginator__block">
-            <nav class="paginator__navigation">
-              <ul class="paginator__items">
-                <li class="paginator__item">
-                  <a class="paginator__link paginator__link--unactive">
-                    < </a> </li> <li class="paginator__item">
-                      <a class="paginator__link paginator__link--unactive"> 1 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 2 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 3 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 4 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 5 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 6 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 7 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 8 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 9 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 10 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 11 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 12 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 13 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 14 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> 15 </a>
-                </li>
-                <li class="paginator__item">
-                  <a class="paginator__link" href="#"> > </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-      </section>
-      <aside class="sidebar">
-        <section class="sidebar__statistic statistic">
-          <div class="statistic__online" aria-label="Текущий онлайн на сайте">
-            <div class="statistic_pulse statistic_pulse--online">
-              <svg>
-                <circle class="pulse statistic__online-1" cx="50%" cy="50%" r="3px"></circle>
-                <circle class="pulse statistic__online-2" cx="50%" cy="50%" r="3px"></circle>
-                <circle class="pulse statistic__online-center" cx="50%" cy="50%" r="3px"></circle>
-              </svg>
-            </div>
-            <div class="statistic__info statistic__info--online">
-              <span class="statistic__num statistic__num--online">98</span>
-              <span class="statistic__title">онлайн</span>
-            </div>
-          </div>
-          <div class="statistic__files" aria-label="Загружено всего файлов">
-            <div class="statistic_pulse statistic_pulse--files">
-              <svg>
-                <circle class="pulse statistic__files-1" cx="50%" cy="50%" r="3px"></circle>
-                <circle class="pulse statistic__files-2" cx="50%" cy="50%" r="3px"></circle>
-                <circle class="pulse statistic__files-center" cx="50%" cy="50%" r="3px"></circle>
-              </svg>
-            </div>
-            <div class="statistic__info statistic__info--files">
-              <span class="statistic__num statistic__num--files">54</span>
-              <span class="statistic__title">файлов</span>
-            </div>
-          </div>
-          <div class="statistic__down" aria-label="Скачано всего файлов">
-            <div class="statistic_pulse statistic_pulse--down">
-              <svg>
-                <circle class="pulse statistic__down-1" cx="50%" cy="50%" r="3px"></circle>
-                <circle class="pulse statistic__down-2" cx="50%" cy="50%" r="3px"></circle>
-                <circle class="pulse statistic__down-center" cx="50%" cy="50%" r="3px"></circle>
-              </svg>
-            </div>
-            <div class="statistic__info statistic__info--down">
-              <span class="statistic__num statistic__num--down">196</span>
-              <span class="statistic__title">скачиваний</span>
-            </div>
-          </div>
-        </section>
+    </header>
+    <main class="main">
+        <div class="main__block">
+            <section class="materials">
+                <div class="materials__box">
+                    <h1 class="materials__title">Новое на сайте</h1>
+                    <article class="materials__block block">
+                        <div class="block__poster gradient-wrap">
+                            <img class="block__img" src="img/cat-energy.png" alt="photo">
+                        </div>
+                        <div class="block__text">
+                            <div class="block__details ">
+                                <a class="block__title-link" href="#">
+                                    <h2 class="block__title">Сайт "CAT ENERGY"</h2>
+                                </a>
+                                <p class="block__date">18.08.2019</p>
+                                <p class="block__kategory"><a class="block__kategory-link block__kategory-portfolio" href="portfolio.html">Портфолио</a>
+                                </p>
+                                <p class="block__desc">
+                                    Когда я только учился верстать, вторым моим проектом стал<br> Cat Energy - сайт с адаптивной версткой
+                                </p>
+                            </div>
+                            <div class="block__links">
+                                <a class="block__link block__link--detail" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="materials__block block">
+                        <div class="block__poster gradient-wrap">
+                            <img class="block__img" src="img/photo.png" alt="photo">
+                        </div>
+                        <div class="block__text">
+                            <div class="block__details ">
+                                <a class="block__title-link" href="#">
+                                    <h2 class="block__title">Шрифт - KATANA'S EDGE</h2>
+                                </a>
+                                <p class="block__date">18.08.2019</p>
+                                <p class="block__kategory"><a class="block__kategory-link block__kategory-fonts" href="#">Шрифты</a></p>
+                                <p class="block__desc">
+                                    Представитель шрифтов из разряда таких, как Edo SZ или True Lies.
+                                    <br> Полезно иметь парочку таковых на разные случаи, рекомендую
+                                </p>
+                            </div>
+                            <div class="block__links">
+                                <a class="block__link block__link--detail" href="#">Подробнее</a>
+                                <a class="block__link block__link--download" href="#">Скачать</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="materials__block block">
+                        <div class="block__poster gradient-wrap">
+                            <img class="block__img" src="img/photo1.png" alt="photo">
+                        </div>
+                        <div class="block__text">
+                            <div class="block__details ">
+                                <a class="block__title-link" href="#">
+                                    <h2 class="block__title">GOOGLE PICASA - Лучшая в мире программа для просмотра картинок!
+                                    </h2>
+                                </a>
+                                <p class="block__date">13.07.2019</p>
+                                <p class="block__kategory"><a class="block__kategory-link block__kategory-program" href="#">Программы</a>
+                                </p>
+                                <p class="block__desc">
+                                    Вам надоел стандартный просмотрщик картинок? Он слишком уродливый,
+                                    <br> медленный или Вы просто хотите чего-то получше?
+                                    <br> Тогда Google Picasa это Ваше спасение!!!
+                                </p>
+                            </div>
+                            <div class="block__links">
+                                <a class="block__link block__link--detail" href="#">Подробнее</a>
+                                <a class="block__link block__link--download" href="#">Скачать</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="materials__block block">
+                        <div class="block__poster gradient-wrap">
+                            <img class="block__img" src="img/photo2.png" alt="photo">
+                        </div>
+                        <div class="block__text">
+                            <div class="block__details ">
+                                <a class="block__title-link" href="#">
+                                    <h2 class="block__title">Набор крутых иконок</h2>
+                                </a>
+                                <p class="block__date">20.08.2019</p>
+                                <p class="block__kategory"><a class="block__kategory-link block__kategory-design" href="#">Дизайн</a>
+                                </p>
+                                <p class="block__desc">
+                                    Набор кастомных и не только иконок, хорошо подойдет для оформления Windows.
+                                    <br> Все выполнены в едином красивом стиле.
+                                </p>
+                            </div>
+                            <div class="block__links">
+                                <a class="block__link block__link--detail" href="#">Подробнее</a>
+                                <a class="block__link block__link--download" href="#">Скачать</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <section class="paginator">
+                    <h2 class="paginator__title">Страницы</h2>
+                    <div class="paginator__block">
+                        <nav class="paginator__navigation">
+                            <ul class="paginator__items">
+                                <li class="paginator__item">
+                                    <a class="paginator__link paginator__link--unactive">
+                                        &lt; </a> </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link paginator__link--unactive"> 1 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 2 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 3 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 4 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 5 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 6 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 7 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 8 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 9 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 10 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 11 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 12 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 13 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 14 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> 15 </a>
+                                </li>
+                                <li class="paginator__item">
+                                    <a class="paginator__link" href="#"> &gt; </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </section>
+            <aside class="sidebar">
+                <section class="sidebar__statistic statistic">
+                    <div class="statistic__online statistic__desc" aria-label="Текущий онлайн на сайте">
+                        <div class="statistic_pulse statistic_pulse--online">
+                            <svg>
+                                <circle class="pulse statistic__online-1" cx="50%" cy="50%" r="3px"></circle>
+                                <circle class="pulse statistic__online-2" cx="50%" cy="50%" r="3px"></circle>
+                                <circle class="pulse statistic__online-center" cx="50%" cy="50%" r="3px"></circle>
+                            </svg>
+                        </div>
+                        <div class="statistic__info statistic__info--online">
+                            <span class="statistic__num statistic__num--online">98</span>
+                            <span class="statistic__title">онлайн</span>
+                        </div>
+                    </div>
+                    <div class="statistic__files statistic__desc" aria-label="Загружено всего файлов">
+                        <div class="statistic_pulse statistic_pulse--files">
+                            <svg>
+                                <circle class="pulse statistic__files-1" cx="50%" cy="50%" r="3px"></circle>
+                                <circle class="pulse statistic__files-2" cx="50%" cy="50%" r="3px"></circle>
+                                <circle class="pulse statistic__files-center" cx="50%" cy="50%" r="3px"></circle>
+                            </svg>
+                        </div>
+                        <div class="statistic__info statistic__info--files">
+                            <span class="statistic__num statistic__num--files">54</span>
+                            <span class="statistic__title">файлов</span>
+                        </div>
+                    </div>
+                    <div class="statistic__down statistic__desc" aria-label="Скачано всего файлов">
+                        <div class="statistic_pulse statistic_pulse--down">
+                            <svg>
+                                <circle class="pulse statistic__down-1" cx="50%" cy="50%" r="3px"></circle>
+                                <circle class="pulse statistic__down-2" cx="50%" cy="50%" r="3px"></circle>
+                                <circle class="pulse statistic__down-center" cx="50%" cy="50%" r="3px"></circle>
+                            </svg>
+                        </div>
+                        <div class="statistic__info statistic__info--down">
+                            <span class="statistic__num statistic__num--down">196</span>
+                            <span class="statistic__title">скачиваний</span>
+                        </div>
+                    </div>
+                </section>
 
 
-        <section class="categories">
-          <h2 class="categories__title">Категории</h2>
-          <div class="categories__navigation">
-            <ul>
-              <li>
-                <a class="categories__items" href="#"><span class="categories__items-span categories__items--program"></span>Мой софт</a>
-              </li>
-              <li>
-                <a class="categories__items" href="#"><span class="categories__items-span categories__items--port"></span>Портфолио</a>
-              </li>
-              <li class="categories__dropdown-items">
-                <div id="light" class="categories__indicator unactive__light"></div>
-                <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--windows"></span>Софт для
-                  Windows</a>
-                <ul class="categories__wrapper">
-                  <li><a class="categories__item" href="#">Медиа<span class="categories__item-desc">аудио/видео/фото</span></a></li>
-                  <li><a class="categories__item" href="#">Внешний вид<span class="categories__items-span categories__item-desc">Рабочий
-                        стол/Украшения</span></a></li>
-                  <li><a class="categories__item" href="#">Для программиста<span class="categories__item-desc">Редакторы/Эмуляторы</span></a></li>
-                </ul>
-              </li>
-              <li class="categories__dropdown-items">
-                <div id="light" class="categories__indicator unactive__light"></div>
-                <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--design"></span>Дизайн</a>
-                <ul class="categories__wrapper">
-                  <li><a class="categories__item" href="#">Иконки</a></li>
-                  <li><a class="categories__item" href="#">Изображения<span class="categories__item-desc">PNG/JPG</span></a></li>
-                  <li><a class="categories__item" href="#">Обои<span class="categories__item-desc">Живые/статичные</span></a></li>
-                  <li><a class="categories__item" href="#">Шрифты<span class="categories__item-desc">Photoshop/GoogleFonts</span></a>
-                  </li>
-                </ul>
-              </li>
-              <li class="categories__dropdown-items">
-                <div id="light" class="categories__indicator unactive__light"></div>
-                <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--dev"></span>Разработчику</a>
-                <ul class="categories__wrapper">
-                  <li><a class="categories__item" href="#">PSD макеты</a></li>
-                  <li><a class="categories__item" href="#">Javascript<span class="categories__item-desc">Библиотеки/макеты</span></a></li>
-                  <li><a class="categories__item" href="#">Html/Css<span class="categories__item-desc">Шаблоны/макеты</span></a></li>
-                  <li><a class="categories__item" href="#">Php/MySQL<span class="categories__item-desc">Базы
-                        данных/учебники</span></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="social">
-          <h2 class="social__title">Мои соцсети</h2>
-          <ul class="social__items">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/sportpatriot72">ВКонтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--git" href="https://github.com/BjornSkarsgard">GitHub</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--gm" href="mailto:bjornskarsgarddev@gmail.com">Gmail</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--yt" href="https://www.youtube.com/channel/UCjJ2V4X_YwyYoEFX2xCktUg?view_as=subscriber">YouTube</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--inst" href="#">Instagram</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--ds" href="https://discord.gg/Ap5ckqQ">Discord</a>
-            </li>
-          </ul>
-        </section>
-      </aside>
-    </div>
-  </main>
-  <footer class="footer">
-    <section class="about">
-      <div class="about__block">
-        <div class="about__box">
-          <div class="about__logo about__logo--up"></div>
-          <p class="about__desc">
-            Проект "SkarsgarDev" создан с целью<br>
-            коллекционирования наиболее интересных<br>
-            материалов, с целью быстрого доступа к ним<br>
-            в форс-мажорных ситуациях.
-            <br>
-            <br>
-            А так-же в качестве портфолио с содержанием<br>
-            примеров выполненных работ
-            <br>
-            <br>
-            Мы не преследуем цель незаконного распространения<br>
-            материалов, поэтому если Вы являетесь<br>
-            правообладателем, сообщите нам о наруешнии по<br>
-            указанным здесь контактам
-          </p>
-          <div class="about__logo about__logo--down"></div>
+                <section class="categories">
+                    <h2 class="categories__title">Категории</h2>
+                    <div class="categories__navigation">
+                        <ul>
+                            <li>
+                                <a class="categories__items" href="#"><span class="categories__items-span categories__items--program"></span>Мой софт</a>
+                            </li>
+                            <li>
+                                <a class="categories__items" href="portfolio.html"><span class="categories__items-span categories__items--port"></span>Портфолио</a>
+                            </li>
+                            <li class="categories__dropdown-items">
+                                <div id="light" class="categories__indicator unactive__light"></div>
+                                <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--windows"></span>Софт для
+                                    Windows</a>
+                                <ul class="categories__wrapper">
+                                    <li><a class="categories__item" href="#">Медиа<span class="categories__item-desc">аудио/видео/фото</span></a></li>
+                                    <li><a class="categories__item" href="#">Внешний вид<span class="categories__items-span categories__item-desc">Рабочий
+                                                стол/Украшения</span></a></li>
+                                    <li><a class="categories__item" href="#">Для программиста<span class="categories__item-desc">Редакторы/Эмуляторы</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="categories__dropdown-items">
+                                <div id="light" class="categories__indicator unactive__light"></div>
+                                <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--design"></span>Дизайн</a>
+                                <ul class="categories__wrapper">
+                                    <li><a class="categories__item" href="#">Иконки</a></li>
+                                    <li><a class="categories__item" href="#">Изображения<span class="categories__item-desc">PNG/JPG</span></a></li>
+                                    <li><a class="categories__item" href="#">Обои<span class="categories__item-desc">Живые/статичные</span></a></li>
+                                    <li><a class="categories__item" href="#">Шрифты<span class="categories__item-desc">Photoshop/GoogleFonts</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="categories__dropdown-items">
+                                <div id="light" class="categories__indicator unactive__light"></div>
+                                <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--dev"></span>Разработчику</a>
+                                <ul class="categories__wrapper">
+                                    <li><a class="categories__item" href="#">PSD макеты</a></li>
+                                    <li><a class="categories__item" href="#">Javascript<span class="categories__item-desc">Библиотеки/макеты</span></a></li>
+                                    <li><a class="categories__item" href="#">Html/Css<span class="categories__item-desc">Шаблоны/макеты</span></a></li>
+                                    <li><a class="categories__item" href="#">Php/MySQL<span class="categories__item-desc">Базы
+                                                данных/учебники</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="social">
+                    <h2 class="social__title">Мои соцсети</h2>
+                    <ul class="social__items">
+                        <li class="social__item">
+                            <a class="social__link social__link--vk" href="https://vk.com/bjornskarsgard">ВКонтакте</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--git" href="https://github.com/BjornSkarsgard">GitHub</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--gm" href="mailto:bjornskarsgarddev@gmail.com">Gmail</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--yt" href="https://www.youtube.com/channel/UCjJ2V4X_YwyYoEFX2xCktUg?view_as=subscriber">YouTube</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--inst" href="#">Instagram</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--ds" href="https://discord.gg/Ap5ckqQ">Discord</a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
         </div>
-      </div>
-    </section>
-    <div class="footer__block">
-      <div class="footer__info">
-        <p class="footer__text">
-          © 2019. Автор проекта, дизайнер и программист:
-        </p>
-        <p class="footer__name">Bjorn Skarsgard</p>
-        <p class="footer__email">bjornskarsgarddev@gmail.com</p>
-      </div>
-    </div>
-  </footer>
-  <script src="js/particles/particles.js"></script>
-  <script src="js/particles/app.js"></script>
-  <script src="js/particles/lib/stats.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/slider/slider.js"></script>
-  <script src="js/button/button.js"></script>
+    </main>
+    <footer class="footer">
+        <section class="about">
+            <div class="about__block">
+                <div class="about__box">
+                    <div class="about__logo about__logo--up"></div>
+                    <p class="about__desc">
+                        Проект "SkarsgarDev" создан с целью<br> коллекционирования наиболее интересных<br> материалов, с целью быстрого доступа к ним<br> в форс-мажорных ситуациях.
+                        <br>
+                        <br> А так-же в качестве портфолио с содержанием<br> примеров выполненных работ
+                        <br>
+                        <br> Мы не преследуем цель незаконного распространения<br> материалов, поэтому если Вы являетесь
+                        <br> правообладателем, сообщите нам о наруешнии по<br> указанным здесь контактам
+                    </p>
+                    <div class="about__logo about__logo--down"></div>
+                </div>
+            </div>
+        </section>
+        <div class="footer__block">
+            <div class="footer__info">
+                <p class="footer__text">
+                    © 2019. Автор проекта, дизайнер и программист:
+                </p>
+                <p class="footer__name">Bjorn Skarsgard</p>
+                <p class="footer__email">bjornskarsgarddev@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/for-click/for-click.js"></script>
+    <script src="js/particles/particles.js"></script>
+    <script src="js/particles/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/slider/slider.js"></script>
+    <script src="js/button/button.js"></script>
+    <script src="js/dist/grade.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            /*
+                A NodeList of all your image containers (Or a single Node).
+                The library will locate an <img /> within each
+                container to create the gradient from.
+             */
+            Grade(document.querySelectorAll('.gradient-wrap'))
+        })
+    </script>
 </body>
 
 </html>

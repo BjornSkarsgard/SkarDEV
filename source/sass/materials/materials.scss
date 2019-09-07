@@ -7,8 +7,8 @@
     margin-right: 27px;
     padding: 64px 38px 100px 38px;
     z-index: 10;
-    width: 972px;
-
+    width: 1048px;
+    box-sizing: border-box;
 }
 
 .materials::before {
@@ -42,6 +42,19 @@
     position: relative;
 }
 
+.materials__sorting {
+    position: absolute;
+    left: 150px;
+    width: 23px;
+    height: 23px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.materials__path-2 {
+    fill: $blue;
+}
+
 .materials__box::before {
     content: "";
     position: absolute;
@@ -57,11 +70,9 @@
     0% {
         background-position: 0% 51%
     }
-
     50% {
         background-position: 100% 50%
     }
-
     100% {
         background-position: 0% 51%
     }
@@ -69,20 +80,12 @@
 
 @keyframes neon-line-materials {
     0% {
-        box-shadow: 0 0 10px $purple,
-            0 0 15px $purple,
-            0 0 20px $purple;
+        box-shadow: 0 0 10px $purple, 0 0 15px $purple, 0 0 20px $purple;
     }
-
     50% {
-        box-shadow: 0 0 10px #0032ff,
-            0 0 15px #0032ff,
-            0 0 20px #0032ff;
+        box-shadow: 0 0 10px #0032ff, 0 0 15px #0032ff, 0 0 20px #0032ff;
     }
-
     100% {
-        box-shadow: 0 0 10px $purple,
-            0 0 15px $purple,
-            0 0 20px $purple;
+        box-shadow: 0 0 10px $purple, 0 0 15px $purple, 0 0 20px $purple;
     }
 }
