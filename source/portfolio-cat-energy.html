@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <header class="header">
         <div class="header__block">
             <div class="header__logo">
-                <a class="header__logo-link" href="#"></a>
+                <a class="header__logo-link" href="index.html"></a>
             </div>
             <div class="header__title-logo">
                 <p class="header__title-logo header__title-logo--skar">Skarsgar</p>
@@ -54,168 +55,60 @@
     </header>
     <main class="main">
         <div class="main__block">
-            <section class="materials">
-                <div class="materials__box">
-                    <h1 class="materials__title">Новое на сайте</h1>
-                    <article class="materials__block block">
-                        <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/cat-energy.png" alt="photo" />
-                        </div>
-                        <div class="block__text">
-                            <div class="block__details ">
-                                <h2 class="block__title">
-                                    <a class="block__title-link" href="portfolio-cat-energy.html">
-                                        Сайт "CAT ENERGY"
-                                    </a>
-                                </h2>
-                                <p class="block__date">18.08.2019</p>
-                                <p class="block__kategory"><a class="block__kategory-link block__kategory-portfolio" href="portfolio.html">Портфолио</a>
-                                </p>
-                                <p class="block__desc">
-                                    Когда я только учился верстать, вторым моим проектом стал<br /> Cat Energy - сайт с адаптивной версткой
-                                </p>
+            <section class="materials materials-portfolio">
+                <div class="materials__box materials__box--portfolio">
+                    <article class="materials__portfolio portfolio">
+                        <div class="portfolio__picture">
+                            <div class="portfolio__slider slider">
+                                <div class="slider__wrapper">
+                                    <div class="slider__item">
+                                        <img class="slider__img" src="../img/cat-energy1.png" alt="">
+                                    </div>
+                                    <div class="slider__item">
+                                        <img class="slider__img" src="../img/cat-energy2.png" alt="">
+                                    </div>
+                                    <div class="slider__item">
+                                        <img class="slider__img" src="../img/cat-energy3.png" alt="">
+                                    </div>
+                                    <div class="slider__item">
+                                        <img class="slider__img" src="../img/cat-energy4.png" alt="">
+                                    </div>
+                                </div>
+                                <a class="slider__control slider__control_left" href="#" role="button"></a>
+                                <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
                             </div>
-                            <div class="block__links">
-                                <a class="block__link block__link--detail" href="portfolio-cat-energy.html">Подробнее</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="materials__block block">
-                        <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/photo.png" alt="photo" />
-                        </div>
-                        <div class="block__text">
-                            <div class="block__details">
-                                <h2 class="block__title">
-                                    <a class="block__title-link" href="#">
-                                        Шрифт - KATANA'S EDGE
-                                    </a>
-                                </h2>
-                                <p class="block__date">18.08.2019</p>
-                                <p class="block__kategory"><a class="block__kategory-link block__kategory-fonts" href="#">Шрифты</a></p>
-                                <p class="block__desc">
-                                    Представитель шрифтов из разряда таких, как Edo SZ или True Lies.
-                                    <br /> Полезно иметь парочку таковых на разные случаи, рекомендую
-                                </p>
-                            </div>
-                            <div class="block__links">
-                                <a class="block__link block__link--detail" href="#">Подробнее</a>
-                                <a class="block__link block__link--download" href="#">Скачать</a>
+                            <div class="portfolio__block">
+                                <h1 class="portfolio__title">Сайт - Cat Energy</h1>
+                                <p class="portfolio__date">Опубликовано 18.08.2019</p>
+                                <p class="portfolio__category"><a class="portfolio__category-link" href="portfolio.html">Портфолио</a>
                             </div>
                         </div>
-                    </article>
-                    <article class="materials__block block">
-                        <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/photo1.png" alt="photo" />
-                        </div>
-                        <div class="block__text">
-                            <div class="block__details ">
-                                <h2 class="block__title">
-                                    <a class="block__title-link" href="#">
-                                        Google Picasa - Лучшая в мире программа для просмотра фотографий
-                                    </a>
-                                </h2>
-                                <p class="block__date">13.07.2019</p>
-                                <p class="block__kategory"><a class="block__kategory-link block__kategory-program" href="#">Программы</a>
-                                </p>
-                                <p class="block__desc">
-                                    Вам надоел стандартный просмотрщик картинок? Он слишком уродливый,
-                                    <br> медленный или Вы просто хотите чего-то получше?
-                                    <br> Тогда Google Picasa это Ваше спасение!!!
-                                </p>
+                        <div class="portfolio__details">
+                            <div class="portfolio__info">
+                                <table class="portfolio__table">
+                                    <tr class="portfolio__row">
+                                        <td class="portfolio_cell portfolio_cell--price">Стоимость</td>
+                                        <td class="portfolio_cell portfolio_cell--money">0$</td>
+                                    </tr>
+                                    <tr class="portfolio__row">
+                                        <td class="portfolio_cell portfolio_cell--time">Время выполнения</td>
+                                        <td class="portfolio_cell portfolio_cell--days">30 дней</td>
+                                    </tr>
+                                    <tr class="portfolio__row">
+                                        <td class="portfolio_cell portfolio_cell--link"><a target="_blank" href="https://ivansmovzh.github.io/">Перейти на сайт</a>
+                                        </td>
+                                        <td class="portfolio_cell"></td>
+                                    </tr>
+                                </table>
                             </div>
-                            <div class="block__links">
-                                <a class="block__link block__link--detail" href="#">Подробнее</a>
-                                <a class="block__link block__link--download" href="#">Скачать</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="materials__block block">
-                        <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/photo2.png" alt="photo" />
-                        </div>
-                        <div class="block__text">
-                            <div class="block__details ">
-                                <h2 class="block__title">
-                                    <a class="block__title-link" href="#">
-                                        Набор крутых иконок
-                                    </a>
-                                </h2>
-                                <p class="block__date">20.08.2019</p>
-                                <p class="block__kategory"><a class="block__kategory-link block__kategory-design" href="#">Дизайн</a>
-                                </p>
-                                <p class="block__desc">
-                                    Набор кастомных и не только иконок, хорошо подойдет для оформления Windows.
-                                    <br> Все выполнены в едином красивом стиле.
-                                </p>
-                            </div>
-                            <div class="block__links">
-                                <a class="block__link block__link--detail" href="#">Подробнее</a>
-                                <a class="block__link block__link--download" href="#">Скачать</a>
+                            <div class="portfolio__text">
+                                <p>Мой второй проект, разработанный во время обучения в <a class="portfolio__text-link" href="https://htmlacademy.ru/">Html Academy</a> «Cat Energy» <br> Адаптивный сайт, под мобильные устройства и планшеты, резиновая верстка,
+                                    без функционала <br> Сайт лег в основу моего портфолио, как первый адаптивный.
+                                    <br><br>B.Skarsgard</p>
                             </div>
                         </div>
                     </article>
                 </div>
-                <section class="paginator">
-                    <h2 class="paginator__title">Страницы</h2>
-                    <div class="paginator__block">
-                        <nav class="paginator__navigation">
-                            <ul class="paginator__items">
-                                <li class="paginator__item">
-                                    <a class="paginator__link paginator__link--unactive">
-                                        &lt; </a> </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link paginator__link--unactive"> 1 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 2 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 3 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 4 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 5 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 6 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 7 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 8 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 9 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 10 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 11 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 12 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 13 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 14 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> 15 </a>
-                                </li>
-                                <li class="paginator__item">
-                                    <a class="paginator__link" href="#"> &gt; </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </section>
             </section>
             <aside class="sidebar">
                 <section class="sidebar__statistic statistic">
@@ -382,6 +275,7 @@
     <script src="js/slider/slider.js"></script>
     <script src="js/button/button.js"></script>
     <script src="js/dist/grade.js"></script>
+    <script src="js/slider-portfolio/slider-portfolio.js"></script>
     <script type="text/javascript">
         window.addEventListener('load', function() {
             /*

@@ -19,6 +19,14 @@ li {
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 @font-face {
     font-family: 'Aqum';
     src: url('../fonts/Aqum.ttf') format('truetype');

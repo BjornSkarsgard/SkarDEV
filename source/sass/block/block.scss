@@ -51,10 +51,6 @@
 }
 
 .block__title-link {
-    width: 100%;
-}
-
-.block__title {
     display: inline-block;
     color: $orange;
     font-size: 20px;
@@ -62,7 +58,13 @@
     margin-bottom: 6px;
 }
 
-.block__title:hover {
+.block__title {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.block__title-link:hover {
     background: linear-gradient(-140deg, #00ffde, #4b4fff, #fa53fc);
     -webkit-background-clip: text;
     background-clip: text;
