@@ -11,15 +11,27 @@
     box-sizing: border-box;
 }
 
-.materials::before {
+.materials-portfolio {
+    padding-top: 0;
+}
+
+.materials__box::after {
     content: "";
     position: absolute;
-    width: 93%;
-    top: 92px;
-    left: 39px;
+    width: 100%;
+    top: 27px;
+    left: 0px;
     height: 3px;
     opacity: 0.5;
     animation: neon-line-materials 5s ease infinite;
+}
+
+.materials__box--portfolio {
+    padding-top: 0;
+}
+
+.materials__box--portfolio::after {
+    display: none;
 }
 
 .materials__title {
@@ -30,7 +42,7 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-left: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     background: linear-gradient(140deg, #989898, #eeeeee);
     -webkit-background-clip: text;
     background-clip: text;

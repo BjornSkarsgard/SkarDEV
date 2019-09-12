@@ -10,20 +10,22 @@
     margin-right: auto;
 }
 
-.header__logo-link {
+.header__logo {
     margin-top: 14px;
     margin-left: 2px;
     width: 100px;
     height: 45px;
 }
 
-.header__logo:hover {
-    background: url(../img/logo-hover.png) 50% 50% no-repeat;
-    background-size: 100px;
-    transition: all 0.2s ease-in-out;
+.header__logo-link {
+    position: relative;
+    width: 100px;
+    height: 45px;
 }
 
-.header__logo {
+.header__logo-link::before {
+    content: "";
+    position: absolute;
     background: url(../img/logo.png) 50% 50% no-repeat;
     width: 100px;
     height: 45px;
@@ -31,6 +33,31 @@
     transition: all 0.2s ease-out;
 }
 
+.header__logo:hover .header__logo-link::before {
+    position: absolute;
+    background: url(../img/logo-hover.png) 50% 50% no-repeat;
+    background-size: 100px;
+    transition: all 0.2s ease-out;
+}
+
+// .header__logo-link::before {
+//     content: "";
+//     position: absolute;
+//     background: url(../img/logo.png) 50% 50% no-repeat;
+//     width: 100px;
+//     height: 45px;
+//     background-size: 100px;
+//     transition: all 0.2s ease-out;
+// }
+// .header__logo-link::before:hover {
+//     content: "";
+//     background: url(../img/logo-hover.png) 50% 50% no-repeat;
+//     position: absolute;
+//     width: 100px;
+//     height: 45px;
+//     background-size: 100px;
+//     transition: all 0.2s ease-in-out;
+// }
 .header__title-logo {
     display: flex;
     margin: 0;
