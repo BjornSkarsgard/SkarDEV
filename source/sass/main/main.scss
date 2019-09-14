@@ -15,7 +15,8 @@
 }
 
 .main__block {
-    width: 1405px;
+    min-width: 1283px;
+    max-width: 1440px;
     display: flex;
     margin-left: auto;
     margin-right: auto;

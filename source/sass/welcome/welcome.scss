@@ -5,13 +5,16 @@
 .welcome__box {
     display: flex;
     flex-wrap: wrap;
+    width: 931px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .welcome__flip-container {
     perspective: 1000;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: -9px;
+    margin-left: -21px;
+    margin-right: -21px;
+    margin-top: -2px;
 }
 
 .welcome__flip-container .welcome__flipper {
@@ -22,8 +25,8 @@
 .welcome__flip-container,
 .welcome__front,
 .welcome__back {
-    width: 91px;
-    height: 91px;
+    width: 89px;
+    height: 77px;
     transition: 0.6s;
     transform-style: preserve-3d;
 }
@@ -68,7 +71,7 @@
 
 .welcome__front {
     transform: rotateY(0deg);
-    background-size: 89px;
+    background-size: 86px;
 }
 
 
@@ -82,10 +85,10 @@
 }
 
 .welcome__text {
-    font-size: 38px;
+    font-size: 34px;
     position: absolute;
-    left: 32px;
-    top: 14px;
+    left: 31px;
+    top: 12px;
     text-transform: uppercase;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
@@ -393,16 +396,6 @@
 
 .welcome__flip-container .welcome__flipper--76 {
     animation-delay: 6s;
-}
-
-.welcome__back {
-    width: 91px;
-    height: 79px;
-}
-
-.welcome__image {
-    width: 91px;
-    height: 79px;
 }
 
 @keyframes gg1 {

@@ -3,16 +3,19 @@
 }
 
 .header__block {
-    width: 1405px;
+    min-width: 1283px;
+    max-width: 1440px;
     box-sizing: border-box;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .header__logo {
     margin-top: 14px;
-    margin-left: 2px;
+    margin-left: 10px;
     width: 100px;
     height: 45px;
 }
@@ -26,7 +29,7 @@
 .header__logo-link::before {
     content: "";
     position: absolute;
-    background: url(../img/logo.png) 50% 50% no-repeat;
+    background: url(../img/logo.webp) 50% 50% no-repeat;
     width: 100px;
     height: 45px;
     background-size: 100px;
@@ -35,7 +38,7 @@
 
 .header__logo:hover .header__logo-link::before {
     position: absolute;
-    background: url(../img/logo-hover.png) 50% 50% no-repeat;
+    background: url(../img/logo-hover.webp) 50% 50% no-repeat;
     background-size: 100px;
     transition: all 0.2s ease-out;
 }
@@ -43,7 +46,7 @@
 // .header__logo-link::before {
 //     content: "";
 //     position: absolute;
-//     background: url(../img/logo.png) 50% 50% no-repeat;
+//     background: url(../img/logo.webp) 50% 50% no-repeat;
 //     width: 100px;
 //     height: 45px;
 //     background-size: 100px;
@@ -51,7 +54,7 @@
 // }
 // .header__logo-link::before:hover {
 //     content: "";
-//     background: url(../img/logo-hover.png) 50% 50% no-repeat;
+//     background: url(../img/logo-hover.webp) 50% 50% no-repeat;
 //     position: absolute;
 //     width: 100px;
 //     height: 45px;
@@ -92,9 +95,7 @@
     box-sizing: border-box;
     display: flex;
     width: 470px;
-    margin: 0;
-    margin-top: 33px;
-    margin-right: 171px;
+    margin: 33px 20px 0 20px;
     justify-content: space-between;
     text-transform: uppercase;
     list-style: none;
@@ -209,6 +210,7 @@
 .header__search {
     height: 50px;
     margin-top: 21px;
+    margin-right: 10px;
 }
 
 .search__form {
@@ -237,7 +239,7 @@
 }
 
 .search__button {
-    background: url(../img/search.png) 50% 50% no-repeat;
+    background: url(../img/search.webp) 50% 50% no-repeat;
     border: none;
     width: 30px;
     height: 30px;
@@ -250,7 +252,7 @@
 }
 
 .search__button:hover {
-    background: url(../img/search-focus.png) 50% 50% no-repeat;
+    background: url(../img/search-focus.webp) 50% 50% no-repeat;
     transform: rotate(-90deg);
     transition: transform 0.2s ease-in-out;
     height: 30px;
