@@ -1,5 +1,12 @@
 .sidebar {
-    width: 330px;
-    min-width: 295px;
-    background: $light-gray;
+    display: none;
+}
+
+@media (min-width: $desktop-width) {
+    .sidebar {
+        display: block;
+        width: 330px;
+        min-width: 295px;
+        background: $light-gray;
+    }
 }

@@ -15,11 +15,19 @@
 }
 
 .main__block {
-    min-width: 1283px;
-    max-width: 1440px;
+    width: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     background: #191a1c;
     position: relative;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+@media (min-width: $desktop-width) {
+    .main__block {
+        min-width: 1283px;
+        max-width: 1440px;
+    }
 }
