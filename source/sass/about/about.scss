@@ -6,7 +6,7 @@
 }
 
 .about__block {
-    width: 1405px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
@@ -14,7 +14,7 @@
 }
 
 .about__box {
-    width: 417px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -23,10 +23,10 @@
 }
 
 .about__logo {
-    background: url(../img/logo.png) 50% 50% no-repeat;
-    width: 70px;
-    height: 70px;
-    background-size: 85px;
+    background: url(../img/logo.webp) 50% 50% no-repeat;
+    width: 57px;
+    height: 27px;
+    background-size: 57px;
     padding-left: 15px;
     padding-top: 0;
     margin-bottom: 5px;
@@ -42,11 +42,29 @@
 }
 
 .about__desc {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 100;
     color: #9d9d9d;
     display: inline-block;
     margin: 0;
     margin-left: 40px;
     letter-spacing: 0.2px;
+}
+
+@media (min-width: $desktop-width) {
+    .about__block {
+        width: 1283px;
+    }
+    .about__box {
+        width: 417px;
+    }
+    .about__logo {
+        background: url(../img/logo.webp) 50% 50% no-repeat;
+        width: 70px;
+        height: 70px;
+        background-size: 85px;
+    }
+    .about__desc {
+        font-size: 15px;
+    }
 }

@@ -63,8 +63,8 @@
                 _createClass(Grade, [{
                     key: 'readImage',
                     value: function readImage() {
-                        this.imageDimensions.width = this.image.width * 0.1;
-                        this.imageDimensions.height = this.image.height * 0.1;
+                        this.imageDimensions.width = this.image.width * 0.01;
+                        this.imageDimensions.height = this.image.height * 0.01;
                         this.render();
                     }
                 }, {

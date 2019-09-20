@@ -1,6 +1,7 @@
 .paginator {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .paginator__title {
@@ -16,11 +17,11 @@
     -webkit-text-fill-color: transparent;
 }
 
-.paginator__title::before {
+.paginator::before {
     content: "";
     position: absolute;
     width: 100%;
-    top: 28px;
+    top: 50px;
     height: 3px;
     background: linear-gradient(47deg, #fd00ff, #0032ff, #00ffa7, #ff00f5);
     background-size: 600% 600%;
@@ -38,8 +39,8 @@
     padding: 6px 8px 6px 8px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     background-color: #1f2123;
     animation: neon-paginator 3s ease-in-out infinite alternate;
     box-shadow: 0 0 2px $blue, 0 0 5px $blue, 0 0 10px $blue, inset 0 0 5px #000000, inset 0 0 10px #000000, inset 0 0 15px #000000;
@@ -57,13 +58,8 @@
     width: 38px;
     border: 2px solid $dark-gray;
     border-radius: 3px;
-    margin: 0 3px 0 3px;
+    margin: 2px 2px;
     text-shadow: 0 0 4px #000000, 0 0 5px #000000, 0 0 7px #000000, 0 0 10px #000000;
-    transition: all 0.2s ease-in-out;
-}
-
-.paginator__link:hover {
-    background-color: $bright-gray;
     transition: all 0.2s ease-in-out;
 }
 
@@ -74,10 +70,6 @@
     text-shadow: none;
 }
 
-.paginator__link--unactive:hover {
-    background-color: #1c1e20;
-}
-
 .paginator__item:last-of-type>a {
     color: $blue;
     text-shadow: 0 0 2px $blue, 0 0 5px $blue, 0 0 10px $blue;
@@ -85,6 +77,36 @@
 
 .paginator__item:first-of-type>a {
     color: rgba(148, 237, 255, 0.2)
+}
+
+@media (min-width: $desktop-width) {
+    .paginator::before {
+        display: none;
+    }
+    .paginator__items {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .paginator__title::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 28px;
+        height: 3px;
+        background: linear-gradient(47deg, #fd00ff, #0032ff, #00ffa7, #ff00f5);
+        background-size: 600% 600%;
+        animation: gradient-anim 10s ease infinite;
+    }
+    .paginator__link {
+        margin: 0 3px;
+    }
+    .paginator__link:hover {
+        background-color: $bright-gray;
+        transition: all 0.2s ease-in-out;
+    }
+    .paginator__link--unactive:hover {
+        background-color: #1c1e20;
+    }
 }
 
 @keyframes neon-paginator {

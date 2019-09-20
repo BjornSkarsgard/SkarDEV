@@ -7,13 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SkarsgarDev</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="../img/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-    <!-- <div class="js-count-particles"></div> -->
+    <div class="slideout">
+        <div class="slideout__box">
+            <img class="slideout__img slideout__img--open" src="../img/menu-mobile.svg" alt="Навигация по сайту">
+            <img class="slideout__img slideout__img--close" src="../img/menu-mobile-close.svg" alt="Навигация по сайту">
+        </div>
+    </div>
     <div class="particles" id="particles-js"></div>
     <div class="particles-click" id="particles-js-click"></div>
 
@@ -56,10 +62,25 @@
         <div class="main__block">
             <section class="materials">
                 <div class="materials__box">
-                    <h1 class="materials__title">Новое на сайте</h1>
+                    <div class="materials__title-sorting">
+                        <h1 class="materials__title">Новое на сайте</h1>
+                        <div class="materials__sorting-box">
+                            <svg class="materials__sorting" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 489.3 489.3" style="enable-background:new 0 0 489.3 489.3;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path class="materials__path-1" fill="white" d="M119,468.85V50.05l73.6,73.6c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-94.5-94.5
+                                c-4.6-4.6-12.7-4.6-17.3,0l-94.6,94.5c-4.8,4.8-4.8,12.5,0,17.3c4.8,4.8,12.5,4.8,17.3,0l73.6-73.6v418.8
+                                c0,6.8,5.5,12.3,12.3,12.3C113.5,481.05,119,475.55,119,468.85z"></path>
+                                        <path class="materials__path-2" fill="white" d="M373.8,477.45c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l94.5-94.5c4.8-4.8,4.8-12.5,0-17.3s-12.5-4.8-17.3,0l-73.6,73.6
+                                V20.45c0-6.8-5.5-12.3-12.3-12.3s-12.3,5.5-12.3,12.3v418.8l-73.5-73.6c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3L373.8,477.45z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
                     <article class="materials__block block">
                         <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/cat-energy.png" alt="photo">
+                            <img class="block__img" src="img/cat-energy.webp" alt="photo">
                         </div>
                         <div class="block__text">
                             <div class="block__details ">
@@ -82,7 +103,7 @@
                     </article>
                     <article class="materials__block block">
                         <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/photo.png" alt="photo">
+                            <img class="block__img" src="img/photo.webp" alt="photo">
                         </div>
                         <div class="block__text">
                             <div class="block__details">
@@ -106,7 +127,7 @@
                     </article>
                     <article class="materials__block block">
                         <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/photo1.png" alt="photo">
+                            <img class="block__img" src="img/photo1.webp" alt="photo">
                         </div>
                         <div class="block__text">
                             <div class="block__details ">
@@ -132,7 +153,7 @@
                     </article>
                     <article class="materials__block block">
                         <div class="block__poster gradient-wrap">
-                            <img class="block__img" src="img/photo2.png" alt="photo">
+                            <img class="block__img" src="img/photo2.webp" alt="photo">
                         </div>
                         <div class="block__text">
                             <div class="block__details ">

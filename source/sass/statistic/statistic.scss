@@ -1,12 +1,18 @@
 .statistic {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 330px;
-    box-sizing: border-box;
-    margin-top: 35px;
-    margin-bottom: 31px;
-    justify-content: flex-start;
+    display: none;
+}
+
+@media (min-width: $desktop-width) {
+    .statistic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 295px;
+        box-sizing: border-box;
+        margin-top: 35px;
+        margin-bottom: 31px;
+        justify-content: flex-start;
+    }
 }
 
 .statistic__online {
@@ -70,7 +76,7 @@
     position: relative;
 }
 
-svg {
+.statistic_pulse svg {
     position: absolute;
     border-radius: 50%;
     margin: 0 auto;

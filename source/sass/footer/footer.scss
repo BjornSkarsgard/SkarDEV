@@ -3,15 +3,16 @@
 }
 
 .footer__info {
-    width: 1405px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 45px 0 45px 0;
     color: #9d9d9d;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .footer__text {
@@ -30,4 +31,16 @@
     margin: 0;
     color: $blue;
     font-weight: 100;
+    font-size: 9px;
+}
+
+@media (min-width: $desktop-width) {
+    .footer__info {
+        width: 1283px;
+        justify-content: flex-start;
+        font-size: 15px;
+    }
+    .footer__email {
+        font-size: 15px;
+    }
 }

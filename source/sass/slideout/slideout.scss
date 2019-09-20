@@ -1,0 +1,29 @@
+.slideout {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    z-index: 100;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.slideout__box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+}
+
+.slideout__img--close {
+    display: none;
+}
+
+@media (min-width: $desktop-width) {
+    .slideout {
+        display: none;
+    }
+}
