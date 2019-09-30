@@ -210,7 +210,7 @@ var updateWithPatch = function() {
 pJSDom[0].pJS.fn.particlesUpdate = updateWithPatch.bind(pJSDom[0].pJS);
 
 var count_particles, stats, update;
-stats = new Stats();
+stats = Stats;
 stats.setMode(0);
 stats.domElement.style.position = "absolute";
 stats.domElement.style.left = "0px";

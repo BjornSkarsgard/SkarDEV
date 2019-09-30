@@ -3,7 +3,8 @@
     position: relative;
     font-size: 25px;
     margin-left: 19px;
-    letter-spacing: -1.8px;
+    letter-spacing: -1.2px;
+    white-space: nowrap;
     font-family: $bold;
     text-transform: uppercase;
     background: linear-gradient(-140deg, #989898, #eeeeee);
@@ -40,6 +41,7 @@
 
 .categories__items {
     box-sizing: border-box;
+    white-space: nowrap;
     position: relative;
     display: block;
     padding: 15px 61px;
@@ -162,6 +164,48 @@
     left: 18px;
 }
 
+.categories__items--best::before {
+    background: url(../img/012-fire.svg) 50% 50% no-repeat;
+}
+
+.categories__items--best::after {
+    background: url(../img/012-fire.svg) 50% 50% no-repeat;
+}
+
+.categories__items--news::before {
+    background: url(../img/004-news.svg) 50% 50% no-repeat;
+}
+
+.categories__items--news::after {
+    background: url(../img/004-news.svg) 50% 50% no-repeat;
+}
+
+.categories__items--biog::before {
+    background: url(../img/boy.svg) 50% 50% no-repeat;
+}
+
+.categories__items--biog::after {
+    background: url(../img/boy.svg) 50% 50% no-repeat;
+}
+
+.categories__items--blog::before {
+    background: url(../img/005-blogging.svg) 50% 50% no-repeat;
+}
+
+.categories__items--blog::after {
+    background: url(../img/005-blogging.svg) 50% 50% no-repeat;
+}
+
+.categories__items--main::before {
+    background: url(../img/iconfinder_onebit_01_12575.png) 50% 50% no-repeat;
+    background-size: 35px;
+}
+
+.categories__items--main::after {
+    background: url(../img/iconfinder_onebit_01_12575.png) 50% 50% no-repeat;
+    background-size: 23px;
+}
+
 .categories__items--program::before {
     background: url(../img/003-programming.svg) 50% 50% no-repeat;
 }
@@ -200,6 +244,12 @@
 
 .categories__items--dev::after {
     background: url(../img/006-html-5.svg) 50% 50% no-repeat;
+}
+
+@media(min-width:$desktop-width) {
+    .categories__nav--main {
+        display: none;
+    }
 }
 
 // Классы для JS
