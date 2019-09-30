@@ -10,7 +10,7 @@
     background-color: rgba(255, 255, 255, 0);
     box-shadow: 0 0 40px rgba(0, 0, 0, 1);
     top: -79px;
-    z-index: 10;
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -29,5 +29,6 @@
     .main__block {
         min-width: 1283px;
         max-width: 1440px;
+        padding: 0;
     }
 }

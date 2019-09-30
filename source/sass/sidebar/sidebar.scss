@@ -1,5 +1,31 @@
 .sidebar {
     display: none;
+    background-color: $carbon;
+}
+
+.sidebar__mobile {
+    padding-top: 80px;
+    display: block;
+    width: 320px;
+    position: absolute;
+    background-color: $carbon;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(-320px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar.sidebar-open {
+    position: fixed;
+    width: 320px;
+    z-index: 100;
+    transform: translateX(1);
+}
+
+.sidebar-open-mobile {
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
 }
 
 @media (min-width: $desktop-width) {
@@ -8,5 +34,9 @@
         width: 330px;
         min-width: 295px;
         background: $light-gray;
+        transform: translateX(0);
+    }
+    .sidebar__mobile {
+        display: none;
     }
 }

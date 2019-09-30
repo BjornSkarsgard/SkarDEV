@@ -19,12 +19,30 @@ li {
     list-style: none;
 }
 
+.overflow-hide {
+    overflow: hidden;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+
+.wrapper {
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.wrapper-transform {
+    transform: translateX(320px);
+    transition: transform 0.2s ease-in-out;
 }
 
 @font-face {
