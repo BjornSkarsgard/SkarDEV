@@ -22,8 +22,6 @@ $(document).ready(function() {
         return false;
     });
 
-
-
     $('.sidebar__pc > .categories > .categories__navigation > ul > li > a').click(function() {
             $('.categories__navigation > ul > li > a, .sidebar__pc > .categories > .categories__navigation > ul > .categories__dropdown-items a').removeClass('active');
             $(this).addClass('active');
@@ -33,10 +31,6 @@ $(document).ready(function() {
             $(this).addClass('active');
         });
 
-
-
-
-
     $('.sidebar__mobile > .categories > .categories__navigation > ul > li > a').click(function() {
             $('.categories__navigation > ul > li > a, .sidebar__mobile > .categories > .categories__navigation > ul > .categories__dropdown-items a').removeClass('active');
             $(this).addClass('active');
@@ -45,9 +39,5 @@ $(document).ready(function() {
             $('.categories__dropdown-items ul li a').removeClass('active');
             $(this).addClass('active');
         });
-
-
-
-
 
 });

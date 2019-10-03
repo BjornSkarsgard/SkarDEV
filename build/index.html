@@ -19,7 +19,6 @@
     <div class="particles" id="particles-js"></div>
     <!-- Частицы при клике -->
     <div class="particles-click" id="particles-js-click"></div>
-
     <div class="wrapper">
         <header class="header">
             <div class="header__block">
@@ -48,8 +47,9 @@
                     </ul>
                 </div>
                 <div class="header__search search">
+                    <h2 class="visually-hidden ">Форма поиска</h2>
                     <form class="search__form" action="#" method="GET">
-                        <input class="search__box" type="search" name="search" id="1" placeholder="Что то потерял? Все найдется!">
+                        <input class="search__box" type="search" name="search" placeholder="Что то потерял? Все найдется!">
                         <input value="" class="search__button" type="submit">
                     </form>
                 </div>
@@ -236,7 +236,9 @@
                     </section>
                 </section>
                 <aside class="sidebar sidebar__pc">
+                    <h2 class="visually-hidden ">Сайдбар</h2>
                     <section class="sidebar__statistic statistic">
+                        <h2 class="visually-hidden ">Cтатистика сайта</h2>
                         <div class="statistic__online statistic__desc" aria-label="Текущий онлайн на сайте">
                             <div class="statistic_pulse statistic_pulse--online">
                                 <svg>
@@ -291,7 +293,7 @@
                                     <a class="categories__items" href="portfolio.html"><span class="categories__items-span categories__items--port"></span>Портфолио</a>
                                 </li>
                                 <li class="categories__dropdown-items">
-                                    <div id="light" class="categories__indicator unactive__light"></div>
+                                    <div class="categories__indicator unactive__light"></div>
                                     <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--windows"></span>Софт для
                                         Windows</a>
                                     <ul class="categories__wrapper">
@@ -302,7 +304,7 @@
                                     </ul>
                                 </li>
                                 <li class="categories__dropdown-items">
-                                    <div id="light" class="categories__indicator unactive__light"></div>
+                                    <div class="categories__indicator unactive__light"></div>
                                     <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--design"></span>Дизайн</a>
                                     <ul class="categories__wrapper">
                                         <li><a class="categories__item" href="#">Иконки</a></li>
@@ -313,7 +315,7 @@
                                     </ul>
                                 </li>
                                 <li class="categories__dropdown-items">
-                                    <div id="light" class="categories__indicator unactive__light"></div>
+                                    <div class="categories__indicator unactive__light"></div>
                                     <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--dev"></span>Разработчику</a>
                                     <ul class="categories__wrapper">
                                         <li><a class="categories__item" href="#">PSD макеты</a></li>
@@ -354,6 +356,7 @@
         </main>
         <footer class="footer">
             <section class="about">
+                <h2 class="visually-hidden ">О сайте</h2>
                 <div class="about__block">
                     <div class="about__box">
                         <div class="about__logo about__logo--up"></div>
@@ -379,9 +382,11 @@
                 </div>
             </div>
         </footer>
+        <div class="overlay"></div>
     </div>
     <aside class="sidebar sidebar__mobile">
         <section class="sidebar__statistic statistic">
+            <h2 class="visually-hidden ">Cтатистика сайта</h2>
             <div class="statistic__online statistic__desc" aria-label="Текущий онлайн на сайте">
                 <div class="statistic_pulse statistic_pulse--online">
                     <svg>
@@ -423,8 +428,9 @@
             </div>
         </section>
         <section class="header__search header__search--mobile search">
+            <h2 class="visually-hidden ">Форма поиска</h2>
             <form class="search__form" action="#" method="GET">
-                <input class="search__box" type="search" name="search" id="1" placeholder="Что то потерял? Все найдется!">
+                <input class="search__box" type="search" name="search" placeholder="Что то потерял? Все найдется!">
                 <input value="" class="search__button" type="submit">
             </form>
         </section>
@@ -433,7 +439,7 @@
             <div class="categories__navigation">
                 <ul>
                     <li class="categories__nav--main">
-                        <a class="categories__items" href="index.html"><span class="categories__items-span categories__items--main"></span>Главная страница</a>
+                        <a class="categories__items categories__items--active" href="#"><span class="categories__items-span categories__items--main"></span>Главная страница</a>
                     </li>
                     <li>
                         <a class="categories__items" href="#"><span class="categories__items-span categories__items--best"></span>Лучшее</a>
@@ -459,7 +465,7 @@
                         <a class="categories__items" href="portfolio.html"><span class="categories__items-span categories__items--port"></span>Портфолио</a>
                     </li>
                     <li class="categories__dropdown-items">
-                        <div id="light" class="categories__indicator unactive__light"></div>
+                        <div class="categories__indicator unactive__light"></div>
                         <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--windows"></span>Софт для
                             Windows</a>
                         <ul class="categories__wrapper">
@@ -470,7 +476,7 @@
                         </ul>
                     </li>
                     <li class="categories__dropdown-items">
-                        <div id="light" class="categories__indicator unactive__light"></div>
+                        <div class="categories__indicator unactive__light"></div>
                         <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--design"></span>Дизайн</a>
                         <ul class="categories__wrapper">
                             <li><a class="categories__item" href="#">Иконки</a></li>
@@ -481,7 +487,7 @@
                         </ul>
                     </li>
                     <li class="categories__dropdown-items">
-                        <div id="light" class="categories__indicator unactive__light"></div>
+                        <div class="categories__indicator unactive__light"></div>
                         <a class="categories__items categories__items--drop" href="#"><span class="categories__items-span categories__items--dev"></span>Разработчику</a>
                         <ul class="categories__wrapper">
                             <li><a class="categories__item" href="#">PSD макеты</a></li>
@@ -522,7 +528,6 @@
         <span class="slideout__burger"></span>
     </div>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- <script src="js/for-click/for-click.js"></script> -->
     <script src="js/slideout/slideout.js"></script>
     <script src="js/particles/particles.js"></script>
     <script src="js/particles/app.js"></script>

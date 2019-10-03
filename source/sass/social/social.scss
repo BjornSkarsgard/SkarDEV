@@ -1,3 +1,7 @@
+.social {
+    padding-bottom: 150px;
+}
+
 .social__title {
     display: inline-block;
     position: relative;
@@ -159,5 +163,11 @@
     }
     100% {
         background-position: 0% 51%
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .social {
+        padding: 0;
     }
 }
